@@ -1,0 +1,69 @@
+{
+ "B": 2000,
+ "unit": "subject",
+ "interval": "percentile",
+ "note": "Paired: one resample of subjects is scored under both systems and the difference taken inside it. Fold 0 uses four pixel members; folds 1 and 2 use a single SVFAP model, which is all that exists.",
+ "fold0": {
+  "n_clips": 2448,
+  "n_subjects": 31,
+  "pixel_members": 4,
+  "accuracy_difference": {
+   "point": -0.01388888888888895,
+   "ci": [
+    -0.03797236043989908,
+    0.007743991048153284
+   ],
+   "width_points": 4.571635148805236
+  },
+  "macro_f1_difference": {
+   "point": -0.02332716584372252,
+   "ci": [
+    -0.06085809941401336,
+    0.013245016333855216
+   ],
+   "width_points": 7.410311574786857
+  }
+ },
+ "fold1": {
+  "n_clips": 2578,
+  "n_subjects": 30,
+  "pixel_members": 1,
+  "accuracy_difference": {
+   "point": -0.031031807602792782,
+   "ci": [
+    -0.07229088851160156,
+    0.006708701892833634
+   ],
+   "width_points": 7.8999590404435205
+  },
+  "macro_f1_difference": {
+   "point": -0.01981822746105144,
+   "ci": [
+    -0.06108754797989835,
+    0.02154682243392636
+   ],
+   "width_points": 8.26343704138247
+  }
+ },
+ "fold2": {
+  "n_clips": 2853,
+  "n_subjects": 30,
+  "pixel_members": 1,
+  "accuracy_difference": {
+   "point": 0.03399929898352616,
+   "ci": [
+    -0.013012563282079684,
+    0.0888134838328797
+   ],
+   "width_points": 10.182604711495937
+  },
+  "macro_f1_difference": {
+   "point": 0.019844799919384037,
+   "ci": [
+    -0.02880883489319445,
+    0.07568930663308845
+   ],
+   "width_points": 10.44981415262829
+  }
+ }
+}

@@ -1,0 +1,53 @@
+7879 cached train clips, folds [2448, 2578, 2853]
+reliability features from cache
+per-clip reliability (7879, 10), subject aggregates (7879, 7)
+  fold 0 geometry fitted and cached
+  fold 0 pixel : acc 0.6981 macroF1 0.5939
+  fold 0 geom  : acc 0.6712 macroF1 0.5554
+  fold 0 seq   : acc 0.6761 macroF1 0.5785
+  fold 1 geometry fitted and cached
+  fold 1 pixel : acc 0.6385 macroF1 0.5535
+  fold 1 geom  : acc 0.5865 macroF1 0.5293
+  fold 1 seq   : acc 0.6001 macroF1 0.5461
+  fold 2 geometry fitted and cached
+  fold 2 pixel : acc 0.6723 macroF1 0.6008
+  fold 2 geom  : acc 0.6716 macroF1 0.5862
+  fold 2 seq   : acc 0.6681 macroF1 0.5658
+clips without a landmark sequence per fold: {0: 0, 1: 0, 2: 18}
+
+fold 0 (n=2448):
+   pixel                macroF1 0.5939  acc 0.6981  uar 0.5713
+   geom                 macroF1 0.5554  acc 0.6712  uar 0.5588
+   seq                  macroF1 0.5785  acc 0.6761  uar 0.5826
+   fixed_thirds         macroF1 0.5866  acc 0.6985  uar 0.5835
+   fixed_w05_pixel_geom macroF1 0.5731  acc 0.6900  uar 0.5715
+   router_perclip       macroF1 0.5852  acc 0.7014  uar 0.5817
+   router_trans         macroF1 0.5874  acc 0.7010  uar 0.5840
+   best single stream on macro-F1: pixel; router mean weights (pixel,geom,seq) per-clip [0.571, 0.057, 0.372] sd [0.149, 0.137, 0.16]
+
+fold 1 (n=2578):
+   pixel                macroF1 0.5535  acc 0.6385  uar 0.5352
+   geom                 macroF1 0.5293  acc 0.5865  uar 0.5140
+   seq                  macroF1 0.5461  acc 0.6001  uar 0.5337
+   fixed_thirds         macroF1 0.5447  acc 0.6074  uar 0.5282
+   fixed_w05_pixel_geom macroF1 0.5419  acc 0.6059  uar 0.5255
+   router_perclip       macroF1 0.5494  acc 0.6330  uar 0.5335
+   router_trans         macroF1 0.5548  acc 0.6358  uar 0.5379
+   best single stream on macro-F1: pixel; router mean weights (pixel,geom,seq) per-clip [0.699, 0.071, 0.23] sd [0.168, 0.101, 0.13]
+
+fold 2 (n=2853):
+   pixel                macroF1 0.6008  acc 0.6723  uar 0.5909
+   geom                 macroF1 0.5862  acc 0.6716  uar 0.5769
+   seq                  macroF1 0.5658  acc 0.6681  uar 0.5564
+   fixed_thirds         macroF1 0.6044  acc 0.6926  uar 0.5935
+   fixed_w05_pixel_geom macroF1 0.6059  acc 0.6909  uar 0.5958
+   router_perclip       macroF1 0.6111  acc 0.6954  uar 0.5984
+   router_trans         macroF1 0.5987  acc 0.6859  uar 0.5871
+   best single stream on macro-F1: pixel; router mean weights (pixel,geom,seq) per-clip [0.61, 0.084, 0.307] sd [0.24, 0.123, 0.239]
+
+router_perclip: macro-F1 mean 0.5819 | vs best single -0.0009 (needs >= +0.015) | vs best fixed fusion +0.0033 (needs >= +0.01) | non-negative on 1/3 -> FAIL
+
+router_trans: macro-F1 mean 0.5803 | vs best single -0.0024 (needs >= +0.015) | vs best fixed fusion +0.0018 (needs >= +0.01) | non-negative on 1/3 -> FAIL
+
+HEADLINE (per-clip router) gate: FAIL
+GATE_V2B_DONE

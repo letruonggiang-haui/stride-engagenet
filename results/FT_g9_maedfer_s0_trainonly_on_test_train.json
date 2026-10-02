@@ -1,0 +1,96 @@
+{
+ "args": {
+  "backbone": "maedfer",
+  "dataset": "daisee",
+  "train_splits": "train",
+  "eval_split": "test",
+  "cv_folds": 0,
+  "cv_fold": -1,
+  "epochs": 0,
+  "warmup": 2,
+  "lr": 0.001,
+  "layer_decay": 0.75,
+  "wd": 0.05,
+  "batch": 16,
+  "accum": 2,
+  "lora": 16,
+  "frames": 16,
+  "stride": 19,
+  "smoothing": 0.1,
+  "ldl": 0.0,
+  "placeholder": false,
+  "balanced": false,
+  "drop_path": 0.1,
+  "ema": 0.999,
+  "tta_windows": 5,
+  "tta_flip": false,
+  "seed": 0,
+  "tag": "g9_maedfer_s0_trainonly_on_test",
+  "workers": 12,
+  "max_train": 0,
+  "eval_only": "g9_maedfer_s0_train",
+  "open_official": true
+ },
+ "K": 4,
+ "n_train": 5358,
+ "n_eval": 1784,
+ "subjects_eval": 21,
+ "eval_class_counts": [
+  4,
+  84,
+  882,
+  814
+ ],
+ "eval_majority_baseline": 0.4943946188340807,
+ "train_class_counts": [
+  34,
+  213,
+  2617,
+  2494
+ ],
+ "span_frames": 286,
+ "final": {
+  "epoch": -1,
+  "loss": NaN,
+  "acc": 0.5173766816143498,
+  "uar": 0.27182678968393253,
+  "macro_f1": 0.265006000910483,
+  "pred_dist": [
+   0,
+   0,
+   943,
+   841
+  ]
+ },
+ "final_raw_weights": {
+  "acc": 0.5173766816143498,
+  "uar": 0.27182678968393253,
+  "macro_f1": 0.265006000910483,
+  "pred_dist": [
+   0,
+   0,
+   943,
+   841
+  ]
+ },
+ "log": [
+  {
+   "epoch": -1,
+   "loss": NaN,
+   "acc": 0.5173766816143498,
+   "uar": 0.27182678968393253,
+   "macro_f1": 0.265006000910483,
+   "pred_dist": [
+    0,
+    0,
+    943,
+    841
+   ]
+  }
+ ],
+ "seconds": 289.7835569381714,
+ "eval_set": "official_test",
+ "eval_is_official_split": true,
+ "tta_windows": 5,
+ "tta_flip": false
+}

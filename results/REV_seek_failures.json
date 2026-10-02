@@ -1,0 +1,27 @@
+{
+ "all_files_with_failed_seek": 251,
+ "analysis_set": 188,
+ "frames_failed_hist": [
+  7455,
+  119,
+  9,
+  123
+ ],
+ "vis63_of_affected": {
+  "45": 80,
+  "59": 53,
+  "58": 40,
+  "8": 7,
+  "36": 2,
+  "54": 2,
+  "50": 1,
+  "24": 1,
+  "34": 1,
+  "55": 1
+ },
+ "labels_of_affected": {
+  "High": 123,
+  "Low": 49,
+  "Medium": 16
+ }
+}

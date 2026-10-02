@@ -1,0 +1,163 @@
+{
+ "metric": "macro-F1",
+ "readings": {
+  "EMA": "final",
+  "non-EMA": "final_raw_weights"
+ },
+ "seed_spread_fold0": 0.0152,
+ "configurations": {
+  "A": {
+   "description": "T=16 s=19 span 286",
+   "EMA": {
+    "per_fold": [
+     0.5939259947489948,
+     0.5534797956561639,
+     0.6007960797479283
+    ],
+    "mean": 0.5827339567176956
+   },
+   "non-EMA": {
+    "per_fold": [
+     0.6091518749923244,
+     0.606322616196342,
+     0.6348173798539114
+    ],
+    "mean": 0.6167639570141926
+   }
+  },
+  "B": {
+   "description": "T=16 s= 9 span 136",
+   "EMA": {
+    "per_fold": [
+     0.5824871020193458,
+     0.5048989255060652,
+     0.5677337052735619
+    ],
+    "mean": 0.5517065775996577
+   },
+   "non-EMA": {
+    "per_fold": [
+     0.5567686117896473,
+     0.5483691224845334,
+     0.602715019540642
+    ],
+    "mean": 0.5692842512716075
+   }
+  },
+  "C": {
+   "description": "T=32 s= 9 span 280",
+   "EMA": {
+    "per_fold": [
+     0.5739838828658754,
+     0.4720512906185335,
+     0.5711149727325654
+    ],
+    "mean": 0.5390500487389914
+   },
+   "non-EMA": {
+    "per_fold": [
+     0.5654044785227497,
+     0.5077921248579998,
+     0.6026871616453738
+    ],
+    "mean": 0.5586279216753746
+   }
+  },
+  "D": {
+   "description": "T=48 s= 6 span 283",
+   "EMA": {
+    "per_fold": [
+     0.5426460417634795,
+     0.44498729282023375,
+     0.5539845128066848
+    ],
+    "mean": 0.5138726157967993
+   },
+   "non-EMA": {
+    "per_fold": [
+     0.5768172782506745,
+     0.4821364795754166,
+     0.580846143285544
+    ],
+    "mean": 0.5465999670372117
+   }
+  }
+ },
+ "steps": {
+  "stride, A to B": {
+   "EMA": {
+    "per_fold": [
+     -0.01143889272964893,
+     -0.04858087015009871,
+     -0.03306237447436633
+    ],
+    "mean": -0.03102737911803799,
+    "negative_on": 3,
+    "mean_exceeds_seed_spread": true
+   },
+   "non-EMA": {
+    "per_fold": [
+     -0.052383263202677055,
+     -0.05795349371180858,
+     -0.03210236031326941
+    ],
+    "mean": -0.04747970574258501,
+    "negative_on": 3,
+    "mean_exceeds_seed_spread": true
+   },
+   "same_conclusion_under_both_readings": true
+  },
+  "budget, B to C": {
+   "EMA": {
+    "per_fold": [
+     -0.00850321915347041,
+     -0.032847634887531674,
+     0.0033812674590034675
+    ],
+    "mean": -0.012656528860666205,
+    "negative_on": 2,
+    "mean_exceeds_seed_spread": false
+   },
+   "non-EMA": {
+    "per_fold": [
+     0.008635866733102349,
+     -0.04057699762653355,
+     -2.7857895268157407e-05
+    ],
+    "mean": -0.01065632959623312,
+    "negative_on": 2,
+    "mean_exceeds_seed_spread": false
+   },
+   "same_conclusion_under_both_readings": true
+  },
+  "cumulative, A to D": {
+   "EMA": {
+    "per_fold": [
+     -0.05127995298551524,
+     -0.10849250283593015,
+     -0.04681156694124344
+    ],
+    "mean": -0.06886134092089628,
+    "negative_on": 3,
+    "mean_exceeds_seed_spread": true
+   },
+   "non-EMA": {
+    "per_fold": [
+     -0.032334596741649846,
+     -0.12418613662092537,
+     -0.05397123656836744
+    ],
+    "mean": -0.07016398997698088,
+    "negative_on": 3,
+    "mean_exceeds_seed_spread": true
+   },
+   "same_conclusion_under_both_readings": true
+  }
+ },
+ "verdict": {
+  "stride": "resolved under both readings; larger under the non-EMA reading and negative on all three folds in both",
+  "budget": "unresolved under both readings; mean smaller than the fold-0 seed spread in both, and the fold that comes out non-negative differs between readings",
+  "cumulative": "resolved under both readings; negative on all three folds and larger than the seed spread in both",
+  "conclusion": "No conclusion the paper draws, and no conclusion it declines to draw, depends on which reading is used."
+ }
+}

@@ -1,0 +1,24 @@
+sequences available for 7861 of the cached train clips; folds [2448, 2578, 2835]
+loaded (7861, 300, 223), mean valid frames 279
+[gru] fold 0: final-epoch acc 0.6066, best-epoch acc 0.6385 (1473s)
+[gru] fold 1: final-epoch acc 0.5826, best-epoch acc 0.6109 (2830s)
+[gru] fold 2: final-epoch acc 0.6268, best-epoch acc 0.6416 (4209s)
+[gru] fold 0 @epoch 18: seq 0.6356  pixel 0.7047  fused 0.7042  gain -0.0004  err-corr 0.436
+[gru] fold 1 @epoch 18: seq 0.6106  pixel 0.6362  fused 0.6513  gain +0.0151  err-corr 0.383
+[gru] fold 2 @epoch 18: seq 0.6392  pixel 0.6571  fused 0.6783  gain +0.0212  err-corr 0.417
+[gru] GATE: seq mean 0.6284 (>=0.68: False) | fused gain mean +0.0120, non-negative on 2/3 folds -> gate2 FAIL
+$HOME/miniconda3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:385: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+[tfm] fold 0: final-epoch acc 0.6119, best-epoch acc 0.6793 (1704s)
+$HOME/miniconda3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:385: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+[tfm] fold 1: final-epoch acc 0.5904, best-epoch acc 0.6036 (3286s)
+$HOME/miniconda3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:385: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+[tfm] fold 2: final-epoch acc 0.6427, best-epoch acc 0.6695 (4697s)
+[tfm] fold 0 @epoch 18: seq 0.6761  pixel 0.7047  fused 0.7051  gain +0.0004  err-corr 0.549
+[tfm] fold 1 @epoch 18: seq 0.6001  pixel 0.6362  fused 0.6404  gain +0.0043  err-corr 0.508
+[tfm] fold 2 @epoch 18: seq 0.6660  pixel 0.6571  fused 0.6931  gain +0.0360  err-corr 0.475
+[tfm] GATE: seq mean 0.6474 (>=0.68: False) | fused gain mean +0.0136, non-negative on 3/3 folds -> gate2 FAIL
+SEQ_CV_DONE
+SEQCV_EXIT 0

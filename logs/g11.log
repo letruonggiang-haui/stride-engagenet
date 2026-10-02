@@ -1,0 +1,259 @@
+=== g11_A_locked_ep36 Fri Sep 25 07:46:35 UTC 2026
+daisee K=4 train 3535 clips/46 subjects, eval 1823/23 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.110 acc 0.5376 uar 0.2808 f1 0.2514 [0, 0, 1482, 341] 190s
+ep 1 loss 0.990 acc 0.5590 uar 0.2904 f1 0.2790 [0, 0, 1214, 609] 375s
+ep 2 loss 0.976 acc 0.5557 uar 0.2888 f1 0.2765 [0, 0, 1235, 588] 559s
+ep 3 loss 0.972 acc 0.5573 uar 0.2897 f1 0.2774 [0, 0, 1235, 588] 743s
+ep 4 loss 0.959 acc 0.5579 uar 0.2900 f1 0.2776 [0, 0, 1239, 584] 928s
+ep 5 loss 0.952 acc 0.5584 uar 0.2903 f1 0.2773 [0, 0, 1253, 570] 1111s
+ep 6 loss 0.947 acc 0.5650 uar 0.2937 f1 0.2809 [0, 0, 1251, 572] 1289s
+ep 7 loss 0.941 acc 0.5650 uar 0.2937 f1 0.2813 [0, 0, 1241, 582] 1473s
+ep 8 loss 0.937 acc 0.5628 uar 0.2925 f1 0.2802 [0, 0, 1241, 582] 1657s
+ep 9 loss 0.929 acc 0.5634 uar 0.2928 f1 0.2809 [0, 0, 1230, 593] 1841s
+ep 10 loss 0.932 acc 0.5650 uar 0.2934 f1 0.2834 [0, 0, 1184, 639] 2026s
+ep 11 loss 0.927 acc 0.5677 uar 0.2945 f1 0.2864 [0, 0, 1127, 696] 2210s
+ep 12 loss 0.926 acc 0.5666 uar 0.2936 f1 0.2870 [0, 0, 1071, 752] 2393s
+ep 13 loss 0.915 acc 0.5628 uar 0.2913 f1 0.2857 [0, 0, 1017, 806] 2577s
+ep 14 loss 0.917 acc 0.5650 uar 0.2923 f1 0.2871 [0, 0, 984, 839] 2759s
+ep 15 loss 0.918 acc 0.5699 uar 0.2946 f1 0.2897 [0, 0, 945, 878] 2935s
+ep 16 loss 0.908 acc 0.5721 uar 0.2957 f1 0.2908 [0, 0, 924, 899] 3118s
+ep 17 loss 0.906 acc 0.5765 uar 0.2978 f1 0.2929 [0, 0, 904, 919] 3304s
+ep 18 loss 0.903 acc 0.5776 uar 0.2984 f1 0.2935 [0, 0, 909, 914] 3488s
+ep 19 loss 0.896 acc 0.5749 uar 0.2970 f1 0.2921 [0, 0, 901, 922] 3674s
+ep 20 loss 0.896 acc 0.5782 uar 0.2986 f1 0.2936 [0, 0, 884, 939] 3858s
+ep 21 loss 0.886 acc 0.5743 uar 0.2966 f1 0.2917 [0, 0, 879, 944] 4042s
+ep 22 loss 0.880 acc 0.5732 uar 0.2960 f1 0.2911 [0, 0, 876, 947] 4227s
+ep 23 loss 0.868 acc 0.5710 uar 0.2948 f1 0.2899 [0, 0, 871, 952] 4406s
+ep 24 loss 0.870 acc 0.5677 uar 0.2931 f1 0.2882 [0, 0, 863, 960] 4593s
+ep 25 loss 0.866 acc 0.5677 uar 0.2929 f1 0.2879 [0, 0, 838, 985] 4782s
+ep 26 loss 0.861 acc 0.5634 uar 0.2905 f1 0.2853 [0, 0, 814, 1009] 4973s
+ep 27 loss 0.857 acc 0.5612 uar 0.2893 f1 0.2840 [0, 0, 800, 1023] 5163s
+ep 28 loss 0.848 acc 0.5628 uar 0.2901 f1 0.2846 [0, 0, 787, 1036] 5354s
+ep 29 loss 0.847 acc 0.5595 uar 0.2884 f1 0.2828 [0, 0, 778, 1045] 5546s
+ep 30 loss 0.839 acc 0.5568 uar 0.2913 f1 0.2902 [0, 1, 770, 1052] 5739s
+ep 31 loss 0.839 acc 0.5590 uar 0.2924 f1 0.2911 [0, 1, 764, 1058] 5930s
+ep 32 loss 0.838 acc 0.5579 uar 0.2918 f1 0.2902 [0, 2, 753, 1068] 6121s
+ep 33 loss 0.838 acc 0.5568 uar 0.2955 f1 0.2976 [1, 4, 741, 1077] 6314s
+ep 34 loss 0.835 acc 0.5562 uar 0.2952 f1 0.2970 [1, 5, 736, 1081] 6501s
+ep 35 loss 0.839 acc 0.5535 uar 0.2938 f1 0.2957 [1, 5, 739, 1078] 6714s
+final raw-weight (non-EMA) score: acc 0.5425 uar 0.2877 f1 0.2872
+majority baseline on this eval set: 0.4931 (accuracy is only comparable within the same split)
+FT_DONE g11_A_locked_ep36_train {"epoch": 35, "loss": 0.8385675259611823, "acc": 0.5534832693362589, "uar": 0.29376323606071497, "macro_f1": 0.2956821695194043, "pred_dist": [1, 5, 739, 1078]}
+EXIT g11_A_locked_ep36 0
+=== g11_B_full_ep12 Fri Sep 25 09:42:03 UTC 2026
+daisee K=4 train 3535 clips/46 subjects, eval 1823/23 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+ep 0 loss 1.101 acc 0.4745 uar 0.2500 f1 0.1609 [0, 0, 1823, 0] 289s
+ep 1 loss 0.991 acc 0.5650 uar 0.2906 f1 0.2826 [0, 0, 667, 1156] 575s
+ep 2 loss 0.989 acc 0.5650 uar 0.2907 f1 0.2829 [0, 0, 675, 1148] 861s
+ep 3 loss 0.961 acc 0.5666 uar 0.2916 f1 0.2844 [0, 0, 693, 1130] 1145s
+ep 4 loss 0.956 acc 0.5732 uar 0.2951 f1 0.2881 [0, 0, 705, 1118] 1431s
+ep 5 loss 0.945 acc 0.5754 uar 0.2963 f1 0.2898 [0, 0, 728, 1095] 1727s
+ep 6 loss 0.935 acc 0.5776 uar 0.2976 f1 0.2915 [0, 0, 751, 1072] 2035s
+ep 7 loss 0.927 acc 0.5804 uar 0.2991 f1 0.2933 [0, 0, 773, 1050] 2337s
+ep 8 loss 0.920 acc 0.5858 uar 0.3020 f1 0.2963 [0, 0, 783, 1040] 2643s
+ep 9 loss 0.914 acc 0.5886 uar 0.3035 f1 0.2981 [0, 0, 802, 1021] 2951s
+ep 10 loss 0.909 acc 0.5886 uar 0.3036 f1 0.2984 [0, 0, 822, 1001] 3253s
+ep 11 loss 0.907 acc 0.5897 uar 0.3043 f1 0.2992 [0, 0, 846, 977] 3559s
+final raw-weight (non-EMA) score: acc 0.6012 uar 0.3105 f1 0.3056
+majority baseline on this eval set: 0.4931 (accuracy is only comparable within the same split)
+FT_DONE g11_B_full_ep12_train {"epoch": 11, "loss": 0.9067379336465489, "acc": 0.589687328579265, "uar": 0.3043211146617629, "macro_f1": 0.299159365151366, "pred_dist": [0, 0, 846, 977]}
+EXIT g11_B_full_ep12 0
+=== g11_C_full_ep24 Fri Sep 25 10:45:07 UTC 2026
+daisee K=4 train 3535 clips/46 subjects, eval 1823/23 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+ep 0 loss 1.101 acc 0.4745 uar 0.2500 f1 0.1609 [0, 0, 1823, 0] 199s
+ep 1 loss 0.991 acc 0.5650 uar 0.2906 f1 0.2826 [0, 0, 667, 1156] 394s
+ep 2 loss 0.989 acc 0.5666 uar 0.2915 f1 0.2838 [0, 0, 676, 1147] 589s
+ep 3 loss 0.961 acc 0.5650 uar 0.2908 f1 0.2837 [0, 0, 699, 1124] 784s
+ep 4 loss 0.958 acc 0.5716 uar 0.2943 f1 0.2873 [0, 0, 709, 1114] 979s
+ep 5 loss 0.949 acc 0.5727 uar 0.2949 f1 0.2881 [0, 0, 717, 1106] 1173s
+ep 6 loss 0.940 acc 0.5754 uar 0.2963 f1 0.2898 [0, 0, 725, 1098] 1368s
+ep 7 loss 0.934 acc 0.5793 uar 0.2983 f1 0.2918 [0, 0, 728, 1095] 1553s
+ep 8 loss 0.931 acc 0.5787 uar 0.2981 f1 0.2917 [0, 0, 739, 1084] 1736s
+ep 9 loss 0.926 acc 0.5826 uar 0.3002 f1 0.2941 [0, 0, 757, 1066] 1918s
+ep 10 loss 0.917 acc 0.5869 uar 0.3025 f1 0.2966 [0, 0, 769, 1054] 2100s
+ep 11 loss 0.915 acc 0.5869 uar 0.3027 f1 0.2971 [0, 0, 798, 1025] 2282s
+ep 12 loss 0.911 acc 0.5875 uar 0.3030 f1 0.2977 [0, 0, 818, 1005] 2465s
+ep 13 loss 0.909 acc 0.5826 uar 0.3006 f1 0.2954 [0, 0, 836, 987] 2648s
+ep 14 loss 0.903 acc 0.5837 uar 0.3013 f1 0.2962 [0, 0, 855, 968] 2831s
+ep 15 loss 0.898 acc 0.5869 uar 0.3030 f1 0.2979 [0, 0, 859, 964] 3014s
+ep 16 loss 0.889 acc 0.5837 uar 0.3013 f1 0.2963 [0, 0, 867, 956] 3197s
+ep 17 loss 0.887 acc 0.5809 uar 0.2999 f1 0.2949 [0, 0, 864, 959] 3379s
+ep 18 loss 0.886 acc 0.5820 uar 0.3004 f1 0.2954 [0, 0, 862, 961] 3562s
+ep 19 loss 0.874 acc 0.5837 uar 0.3013 f1 0.2963 [0, 0, 863, 960] 3746s
+ep 20 loss 0.874 acc 0.5837 uar 0.3013 f1 0.2963 [0, 0, 868, 955] 3930s
+ep 21 loss 0.874 acc 0.5826 uar 0.3008 f1 0.2958 [0, 0, 870, 953] 4113s
+ep 22 loss 0.874 acc 0.5826 uar 0.3008 f1 0.2959 [0, 1, 870, 952] 4295s
+ep 23 loss 0.875 acc 0.5826 uar 0.3008 f1 0.2959 [1, 1, 868, 953] 4477s
+final raw-weight (non-EMA) score: acc 0.5645 uar 0.2954 f1 0.2939
+majority baseline on this eval set: 0.4931 (accuracy is only comparable within the same split)
+FT_DONE g11_C_full_ep24_train {"epoch": 23, "loss": 0.8752102689309553, "acc": 0.5825562260010971, "uar": 0.30076063963170385, "macro_f1": 0.2959307571608928, "pred_dist": [1, 1, 868, 953]}
+EXIT g11_C_full_ep24 0
+=== g11_D_locked_str4 Fri Sep 25 12:02:21 UTC 2026
+daisee K=4 train 3535 clips/46 subjects, eval 1823/23 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.110 acc 0.5206 uar 0.2719 f1 0.2439 [0, 0, 1457, 366] 176s
+ep 1 loss 0.995 acc 0.5228 uar 0.2729 f1 0.2470 [0, 0, 1434, 389] 349s
+ep 2 loss 0.979 acc 0.5299 uar 0.2764 f1 0.2534 [0, 0, 1402, 421] 521s
+ep 3 loss 0.973 acc 0.5365 uar 0.2797 f1 0.2590 [0, 0, 1374, 449] 694s
+ep 4 loss 0.961 acc 0.5535 uar 0.2882 f1 0.2707 [0, 0, 1333, 490] 867s
+ep 5 loss 0.948 acc 0.5584 uar 0.2907 f1 0.2741 [0, 0, 1322, 501] 1039s
+ep 6 loss 0.941 acc 0.5623 uar 0.2928 f1 0.2752 [0, 0, 1339, 484] 1212s
+ep 7 loss 0.935 acc 0.5645 uar 0.2940 f1 0.2756 [0, 0, 1353, 470] 1385s
+ep 8 loss 0.929 acc 0.5677 uar 0.2958 f1 0.2761 [0, 0, 1373, 450] 1558s
+ep 9 loss 0.923 acc 0.5677 uar 0.2958 f1 0.2763 [0, 0, 1371, 452] 1730s
+ep 10 loss 0.918 acc 0.5677 uar 0.2958 f1 0.2765 [0, 0, 1368, 455] 1904s
+ep 11 loss 0.916 acc 0.5639 uar 0.2938 f1 0.2748 [0, 0, 1363, 460] 2077s
+final raw-weight (non-EMA) score: acc 0.5403 uar 0.2794 f1 0.2746
+majority baseline on this eval set: 0.4931 (accuracy is only comparable within the same split)
+FT_DONE g11_D_locked_str4_train {"epoch": 11, "loss": 0.9161594740369103, "acc": 0.5639056500274273, "uar": 0.29375413915268733, "macro_f1": 0.27475500784054174, "pred_dist": [0, 0, 1363, 460]}
+EXIT g11_D_locked_str4 0
+=== g11_ref_locked Fri Sep 25 12:39:30 UTC 2026
+daisee K=4 train 3535 clips/46 subjects, eval 1823/23 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.110 acc 0.5376 uar 0.2808 f1 0.2514 [0, 0, 1482, 341] 176s
+ep 1 loss 0.990 acc 0.5590 uar 0.2904 f1 0.2790 [0, 0, 1214, 609] 348s
+ep 2 loss 0.975 acc 0.5557 uar 0.2889 f1 0.2764 [0, 0, 1237, 586] 522s
+ep 3 loss 0.969 acc 0.5573 uar 0.2897 f1 0.2774 [0, 0, 1235, 588] 695s
+ep 4 loss 0.953 acc 0.5590 uar 0.2903 f1 0.2798 [0, 0, 1192, 631] 868s
+ep 5 loss 0.945 acc 0.5672 uar 0.2944 f1 0.2852 [0, 0, 1158, 665] 1040s
+ep 6 loss 0.933 acc 0.5716 uar 0.2966 f1 0.2877 [0, 0, 1149, 674] 1212s
+ep 7 loss 0.926 acc 0.5721 uar 0.2969 f1 0.2881 [0, 0, 1144, 679] 1385s
+ep 8 loss 0.919 acc 0.5727 uar 0.2971 f1 0.2888 [0, 0, 1132, 691] 1557s
+ep 9 loss 0.910 acc 0.5743 uar 0.2977 f1 0.2904 [0, 0, 1097, 726] 1730s
+ep 10 loss 0.908 acc 0.5738 uar 0.2973 f1 0.2907 [0, 0, 1062, 761] 1903s
+ep 11 loss 0.902 acc 0.5754 uar 0.2980 f1 0.2919 [0, 0, 1039, 784] 2075s
+final raw-weight (non-EMA) score: acc 0.5546 uar 0.2854 f1 0.2779
+majority baseline on this eval set: 0.4931 (accuracy is only comparable within the same split)
+FT_DONE g11_ref_locked_train {"epoch": 11, "loss": 0.9023389415307479, "acc": 0.5754251234229293, "uar": 0.29797623563754205, "macro_f1": 0.29188683048977165, "pred_dist": [0, 0, 1039, 784]}
+EXIT g11_ref_locked 0
+SCREEN_DONE
+# g11_B_full_ep12        acc 0.5897
+# g11_C_full_ep24        acc 0.5826
+# g11_ref_locked         acc 0.5754
+# g11_D_locked_str4      acc 0.5639
+# g11_A_locked_ep36      acc 0.5535
+=== screening winner: g11_B_full_ep12
+=== g11_B_full_ep12_f1 Fri Sep 25 13:16:37 UTC 2026
+daisee K=4 train 3693 clips/46 subjects, eval 1665/23 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+ep 0 loss 1.085 acc 0.4108 uar 0.2500 f1 0.1456 [0, 0, 0, 1665] 181s
+ep 1 loss 0.974 acc 0.5706 uar 0.2748 f1 0.2302 [0, 0, 1558, 107] 359s
+ep 2 loss 0.957 acc 0.5700 uar 0.2750 f1 0.2326 [0, 0, 1545, 120] 536s
+ep 3 loss 0.938 acc 0.5682 uar 0.2753 f1 0.2376 [0, 0, 1512, 153] 713s
+ep 4 loss 0.924 acc 0.5718 uar 0.2786 f1 0.2459 [0, 0, 1477, 188] 891s
+ep 5 loss 0.913 acc 0.5790 uar 0.2850 f1 0.2600 [0, 0, 1416, 249] 1069s
+ep 6 loss 0.910 acc 0.5808 uar 0.2878 f1 0.2669 [0, 0, 1373, 292] 1247s
+ep 7 loss 0.906 acc 0.5796 uar 0.2889 f1 0.2712 [0, 0, 1331, 334] 1425s
+ep 8 loss 0.898 acc 0.5778 uar 0.2897 f1 0.2747 [0, 0, 1287, 378] 1602s
+ep 9 loss 0.897 acc 0.5784 uar 0.2924 f1 0.2803 [0, 0, 1228, 437] 1779s
+ep 10 loss 0.892 acc 0.5784 uar 0.2935 f1 0.2823 [0, 0, 1198, 467] 1956s
+ep 11 loss 0.892 acc 0.5772 uar 0.2939 f1 0.2836 [0, 0, 1171, 494] 2134s
+final raw-weight (non-EMA) score: acc 0.5622 uar 0.2955 f1 0.2869
+majority baseline on this eval set: 0.5327 (accuracy is only comparable within the same split)
+FT_DONE g11_B_full_ep12_f1_train {"epoch": 11, "loss": 0.892317247390747, "acc": 0.5771771771771772, "uar": 0.293943709329694, "macro_f1": 0.2835714203217062, "pred_dist": [0, 0, 1171, 494]}
+EXIT g11_B_full_ep12_f1 0
+=== g11_B_full_ep12_f2 Fri Sep 25 13:54:37 UTC 2026
+daisee K=4 train 3488 clips/46 subjects, eval 1870/23 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+ep 0 loss 1.092 acc 0.4626 uar 0.2500 f1 0.1581 [0, 0, 1870, 0] 185s
+ep 1 loss 0.982 acc 0.5214 uar 0.2768 f1 0.2616 [0, 0, 1275, 595] 366s
+ep 2 loss 0.953 acc 0.5209 uar 0.2765 f1 0.2612 [0, 0, 1280, 590] 548s
+ep 3 loss 0.946 acc 0.5193 uar 0.2757 f1 0.2604 [0, 0, 1279, 591] 729s
+ep 4 loss 0.941 acc 0.5214 uar 0.2768 f1 0.2614 [0, 0, 1283, 587] 912s
+ep 5 loss 0.936 acc 0.5219 uar 0.2771 f1 0.2617 [0, 0, 1282, 588] 1094s
+ep 6 loss 0.923 acc 0.5225 uar 0.2774 f1 0.2619 [0, 0, 1285, 585] 1276s
+ep 7 loss 0.913 acc 0.5225 uar 0.2774 f1 0.2619 [0, 0, 1286, 584] 1457s
+ep 8 loss 0.909 acc 0.5235 uar 0.2779 f1 0.2627 [0, 0, 1279, 591] 1639s
+ep 9 loss 0.902 acc 0.5235 uar 0.2779 f1 0.2628 [0, 0, 1278, 592] 1821s
+ep 10 loss 0.898 acc 0.5241 uar 0.2782 f1 0.2631 [0, 0, 1277, 593] 2003s
+ep 11 loss 0.895 acc 0.5251 uar 0.2787 f1 0.2638 [0, 0, 1275, 595] 2184s
+final raw-weight (non-EMA) score: acc 0.5348 uar 0.2892 f1 0.2797
+majority baseline on this eval set: 0.4872 (accuracy is only comparable within the same split)
+FT_DONE g11_B_full_ep12_f2_train {"epoch": 11, "loss": 0.8947576801164434, "acc": 0.5251336898395722, "uar": 0.27872185174140085, "macro_f1": 0.26376705017934493, "pred_dist": [0, 0, 1275, 595]}
+EXIT g11_B_full_ep12_f2 0
+=== g11_ref_locked_f1 Fri Sep 25 14:33:36 UTC 2026
+daisee K=4 train 3693 clips/46 subjects, eval 1665/23 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.099 acc 0.5327 uar 0.2500 f1 0.1738 [0, 0, 1665, 0] 173s
+ep 1 loss 0.977 acc 0.4577 uar 0.2650 f1 0.2140 [0, 0, 258, 1407] 341s
+ep 2 loss 0.960 acc 0.4745 uar 0.2695 f1 0.2330 [0, 0, 377, 1288] 511s
+ep 3 loss 0.940 acc 0.4865 uar 0.2742 f1 0.2421 [0, 0, 427, 1238] 680s
+ep 4 loss 0.933 acc 0.4967 uar 0.2774 f1 0.2504 [0, 0, 496, 1169] 850s
+ep 5 loss 0.920 acc 0.5087 uar 0.2805 f1 0.2596 [0, 0, 585, 1080] 1019s
+ep 6 loss 0.914 acc 0.5273 uar 0.2872 f1 0.2709 [0, 0, 674, 991] 1188s
+ep 7 loss 0.906 acc 0.5417 uar 0.2930 f1 0.2787 [0, 0, 724, 941] 1358s
+ep 8 loss 0.901 acc 0.5459 uar 0.2942 f1 0.2809 [0, 0, 750, 915] 1527s
+ep 9 loss 0.897 acc 0.5556 uar 0.2973 f1 0.2857 [0, 0, 802, 863] 1697s
+ep 10 loss 0.892 acc 0.5628 uar 0.2996 f1 0.2891 [0, 0, 841, 824] 1866s
+ep 11 loss 0.887 acc 0.5682 uar 0.3006 f1 0.2911 [0, 0, 889, 776] 2036s
+final raw-weight (non-EMA) score: acc 0.5778 uar 0.2946 f1 0.2845
+majority baseline on this eval set: 0.5327 (accuracy is only comparable within the same split)
+FT_DONE g11_ref_locked_f1_train {"epoch": 11, "loss": 0.8866955687170444, "acc": 0.5681681681681682, "uar": 0.3005902345114948, "macro_f1": 0.291068122917438, "pred_dist": [0, 0, 889, 776]}
+EXIT g11_ref_locked_f1 0
+=== g11_ref_locked_f2 Fri Sep 25 15:09:57 UTC 2026
+daisee K=4 train 3488 clips/46 subjects, eval 1870/23 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.097 acc 0.5048 uar 0.2697 f1 0.2375 [0, 0, 1521, 349] 177s
+ep 1 loss 0.973 acc 0.4840 uar 0.2605 f1 0.1945 [0, 0, 1762, 108] 351s
+ep 2 loss 0.967 acc 0.5096 uar 0.2718 f1 0.2451 [0, 0, 1450, 420] 525s
+ep 3 loss 0.951 acc 0.5064 uar 0.2710 f1 0.2335 [0, 0, 1565, 305] 699s
+ep 4 loss 0.947 acc 0.4968 uar 0.2664 f1 0.2196 [0, 0, 1639, 231] 873s
+ep 5 loss 0.936 acc 0.5075 uar 0.2720 f1 0.2262 [0, 0, 1642, 228] 1046s
+ep 6 loss 0.933 acc 0.5080 uar 0.2722 f1 0.2278 [0, 0, 1632, 238] 1220s
+ep 7 loss 0.920 acc 0.5123 uar 0.2743 f1 0.2336 [0, 0, 1605, 265] 1394s
+ep 8 loss 0.915 acc 0.5059 uar 0.2706 f1 0.2343 [0, 0, 1560, 310] 1568s
+ep 9 loss 0.908 acc 0.5053 uar 0.2701 f1 0.2368 [0, 0, 1531, 339] 1742s
+ep 10 loss 0.902 acc 0.5112 uar 0.2731 f1 0.2419 [0, 0, 1512, 358] 1916s
+ep 11 loss 0.894 acc 0.5144 uar 0.2745 f1 0.2462 [0, 0, 1482, 388] 2090s
+final raw-weight (non-EMA) score: acc 0.5540 uar 0.2937 f1 0.2802
+majority baseline on this eval set: 0.4872 (accuracy is only comparable within the same split)
+FT_DONE g11_ref_locked_f2_train {"epoch": 11, "loss": 0.8942499223652236, "acc": 0.5144385026737968, "uar": 0.27453221068126876, "macro_f1": 0.24619213166825912, "pred_dist": [0, 0, 1482, 388]}
+EXIT g11_ref_locked_f2 0
+
+winner g11_B_full_ep12: folds [0.5897, 0.5772, 0.5251] mean 0.5640 | locked reference: [0.5754, 0.5682, 0.5144] mean 0.5527 | delta +0.0113
+GATE (mean >= 0.60 and delta >= 0.03): FAIL
+G11_DONE

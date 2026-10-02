@@ -1,0 +1,58 @@
+# Sparse temporal sampling for video engagement recognition
+
+Code, pre-registration records and result files for the manuscript submitted to
+PeerJ Computer Science.
+
+The paper measures the two free parameters of the temporal sampling window used
+by appearance models on EngageNet: the frame budget `T` and the stride `s`. The
+span, the coverage and the within-window rate all follow from those two. The
+stride is the parameter the design resolves; the single budget step from 16 to 32
+frames is reported unresolved.
+
+## Layout
+
+    code/              experiment, evaluation and analysis code
+    results/           result files behind every reported number, plus the gate records
+    logs/              training logs, one per campaign
+    preregistration/   the dated design records that fix every threshold before the run it governs
+
+## What is here, and what is not
+
+The result files hold aggregate metrics only: no clip identifiers and no per-clip
+labels. Every number printed in the paper can be read back from them without
+access to the video.
+
+No video-derived artefact is redistributed — no frames, face crops, landmark
+caches, backbone features or per-clip predictions. The dataset paper states a
+CC BY 4.0 licence for EngageNet, but the download agreement that governs derived
+features has not been re-read, so those are withheld.
+
+Pretrained backbone weights are not redistributed. SVFAP and MAE-DFER weights
+come from their own authors under their own terms, and the two InsightFace ONNX
+models come from the `buffalo_l` pack under that project's terms.
+
+## Datasets
+
+EngageNet video and labels are granted by the dataset authors by the route their
+paper sets out. DAiSEE labels are public and its video comes from its authors.
+
+One condition on reproducing the paper: our copy of the EngageNet test labels
+came in the same download as the training and validation labels, and we have not
+confirmed with the dataset authors whether a grant made today carries them. A
+reader given only the training and validation partitions can reproduce the
+inner-fold numbers but not the scores on the official test split.
+
+## Running it
+
+The preprocessing, the window sampler, both streams, the pre-registered gates and
+the subject-level bootstrap are all here, so a reader with the same dataset access
+can regenerate every number in the paper.
+
+`collect_for_manuscript.py` collects, on the machine the experiments ran on, the
+run environment, the parameter counts and the one subject-level interval that the
+deposit does not already carry.
+
+## Status
+
+Private during peer review. It will be made public on acceptance, and archived
+for a DOI at that point.

@@ -1,0 +1,227 @@
+{
+ "design": "MODEL_V2_DESIGN_2026-09-27 gate G-B",
+ "threshold_vs_best_single": 0.015,
+ "threshold_vs_fixed": 0.01,
+ "clips_without_sequence": {
+  "0": 0,
+  "1": 0,
+  "2": 18
+ },
+ "folds": {
+  "0": {
+   "n": 2448,
+   "single": {
+    "pixel": {
+     "acc": 0.6981209150326797,
+     "uar": 0.5713471352705681,
+     "macro_f1": 0.5939259947489948
+    },
+    "geom": {
+     "acc": 0.6711601307189542,
+     "uar": 0.5587728903954958,
+     "macro_f1": 0.5553634573658692
+    },
+    "seq": {
+     "acc": 0.676062091503268,
+     "uar": 0.5826457374647065,
+     "macro_f1": 0.5785451285228504
+    }
+   },
+   "fixed_thirds": {
+    "acc": 0.6985294117647058,
+    "uar": 0.5834996319937147,
+    "macro_f1": 0.5866165853086747
+   },
+   "fixed_w05_pixel_geom": {
+    "acc": 0.6899509803921569,
+    "uar": 0.5714674841698593,
+    "macro_f1": 0.5731425182703982
+   },
+   "router_perclip": {
+    "acc": 0.7013888888888888,
+    "uar": 0.5816729785135581,
+    "macro_f1": 0.585177866051563
+   },
+   "router_perclip_mean_weights": [
+    0.570995032787323,
+    0.0572470985352993,
+    0.37175774574279785
+   ],
+   "router_perclip_weight_std": [
+    0.14852117002010345,
+    0.13659629225730896,
+    0.16037006676197052
+   ],
+   "router_trans": {
+    "acc": 0.7009803921568627,
+    "uar": 0.5839761686171399,
+    "macro_f1": 0.5874281231212994
+   },
+   "router_trans_mean_weights": [
+    0.5429249405860901,
+    0.06582643836736679,
+    0.39124947786331177
+   ],
+   "router_trans_weight_std": [
+    0.3132001757621765,
+    0.1712893694639206,
+    0.3301025927066803
+   ]
+  },
+  "1": {
+   "n": 2578,
+   "single": {
+    "pixel": {
+     "acc": 0.6384794414274632,
+     "uar": 0.5351986219517706,
+     "macro_f1": 0.5534797956561639
+    },
+    "geom": {
+     "acc": 0.5865011636927852,
+     "uar": 0.5139830392691337,
+     "macro_f1": 0.5293494365923305
+    },
+    "seq": {
+     "acc": 0.600077579519007,
+     "uar": 0.5337052720386297,
+     "macro_f1": 0.5461494724465261
+    }
+   },
+   "fixed_thirds": {
+    "acc": 0.6074476338246703,
+    "uar": 0.5281685802590308,
+    "macro_f1": 0.5447017884578169
+   },
+   "fixed_w05_pixel_geom": {
+    "acc": 0.6058960434445306,
+    "uar": 0.5255457008726659,
+    "macro_f1": 0.541854260545396
+   },
+   "router_perclip": {
+    "acc": 0.6330488750969744,
+    "uar": 0.5335160465570785,
+    "macro_f1": 0.5493524481303087
+   },
+   "router_perclip_mean_weights": [
+    0.6989364624023438,
+    0.07117816060781479,
+    0.2298848181962967
+   ],
+   "router_perclip_weight_std": [
+    0.167903333902359,
+    0.10101362317800522,
+    0.1303335726261139
+   ],
+   "router_trans": {
+    "acc": 0.6357641582622188,
+    "uar": 0.537940636949295,
+    "macro_f1": 0.5548338675793032
+   },
+   "router_trans_mean_weights": [
+    0.6847432255744934,
+    0.06718209385871887,
+    0.2480754256248474
+   ],
+   "router_trans_weight_std": [
+    0.21119536459445953,
+    0.13809873163700104,
+    0.1637185961008072
+   ]
+  },
+  "2": {
+   "n": 2853,
+   "single": {
+    "pixel": {
+     "acc": 0.6722747984577637,
+     "uar": 0.5908892056989234,
+     "macro_f1": 0.6007960797479283
+    },
+    "geom": {
+     "acc": 0.6715737819838766,
+     "uar": 0.5769149571063108,
+     "macro_f1": 0.5862128758877153
+    },
+    "seq": {
+     "acc": 0.6680686996144409,
+     "uar": 0.5564289158223032,
+     "macro_f1": 0.5657844883413996
+    }
+   },
+   "fixed_thirds": {
+    "acc": 0.6926042762004907,
+    "uar": 0.5935389017439517,
+    "macro_f1": 0.6043983439020677
+   },
+   "fixed_w05_pixel_geom": {
+    "acc": 0.6908517350157729,
+    "uar": 0.5958197030659247,
+    "macro_f1": 0.6058778112498958
+   },
+   "router_perclip": {
+    "acc": 0.6954083420960393,
+    "uar": 0.5984281121117111,
+    "macro_f1": 0.6110539167640913
+   },
+   "router_perclip_mean_weights": [
+    0.6096765995025635,
+    0.08357124775648117,
+    0.3067522644996643
+   ],
+   "router_perclip_weight_std": [
+    0.23975636065006256,
+    0.1226351261138916,
+    0.23853427171707153
+   ],
+   "router_trans": {
+    "acc": 0.6859446196985629,
+    "uar": 0.5870866907110376,
+    "macro_f1": 0.5987340548873719
+   },
+   "router_trans_mean_weights": [
+    0.6746330857276917,
+    0.10871706902980804,
+    0.21664977073669434
+   ],
+   "router_trans_weight_std": [
+    0.2755589783191681,
+    0.15573742985725403,
+    0.24767427146434784
+   ]
+  }
+ },
+ "summary": {
+  "best_single_macro_f1_mean": 0.5827339567176956,
+  "best_fixed_macro_f1_mean": 0.5785722392228531,
+  "router_perclip": {
+   "macro_f1_mean": 0.5818614103153209,
+   "uar_mean": 0.571205712394116,
+   "acc_mean": 0.6766153686939674,
+   "gain_vs_best_single": -0.0008725464023746632,
+   "gain_vs_best_fixed": 0.0032891710924678463,
+   "per_fold_gain_vs_best_single": [
+    -0.0087481286974318,
+    -0.004127347525855196,
+    0.010257837016163007
+   ],
+   "folds_nonneg": 1,
+   "gate_pass": false
+  },
+  "router_trans": {
+   "macro_f1_mean": 0.5803320151959915,
+   "uar_mean": 0.5696678320924908,
+   "acc_mean": 0.674229723372548,
+   "gain_vs_best_single": -0.002401941521704032,
+   "gain_vs_best_fixed": 0.0017597759731384777,
+   "per_fold_gain_vs_best_single": [
+    -0.0064978716276953286,
+    0.0013540719231392995,
+    -0.0020620248605563996
+   ],
+   "folds_nonneg": 1,
+   "gate_pass": false
+  }
+ },
+ "headline_variant": "perclip",
+ "gate_pass": false,
+ "note": "The per-clip variant is the headline because published comparators score clips independently. The transductive variant uses other unlabelled clips of the same subject and is reported separately. Inner-fold estimates are slightly optimistic: the router is fitted on out-of-fold predictions from stream models that were trained on data including the evaluation fold."
+}

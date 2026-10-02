@@ -1,0 +1,22 @@
+daisee train: 5358 clips with crops, sequences for 5358; folds [1823, 1665, 1870], subjects/fold [23, 23, 23]
+loaded (5358, 300, 223), mean valid frames 300
+[gru] fold 0: final-epoch acc 0.5458, best-epoch acc 0.5557 (498s)
+[gru] fold 1: final-epoch acc 0.5267, best-epoch acc 0.5375 (1174s)
+[gru] fold 2: final-epoch acc 0.5353, best-epoch acc 0.5620 (1821s)
+[gru] fold 0 @epoch 17: seq acc 0.5496 (majority 0.4931) uar 0.2864 pred [0, 0, 1367, 456]
+[gru] fold 1 @epoch 17: seq acc 0.5357 (majority 0.5327) uar 0.2810 pred [0, 0, 934, 731]
+[gru] fold 2 @epoch 17: seq acc 0.5332 (majority 0.4872) uar 0.2831 pred [0, 0, 1300, 570]
+$HOME/miniconda3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:385: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+[tfm] fold 0: final-epoch acc 0.5634, best-epoch acc 0.5705 (758s)
+$HOME/miniconda3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:385: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+[tfm] fold 1: final-epoch acc 0.5171, best-epoch acc 0.5387 (1541s)
+$HOME/miniconda3/lib/python3.13/site-packages/torch/nn/modules/transformer.py:385: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+[tfm] fold 2: final-epoch acc 0.5000, best-epoch acc 0.5380 (2223s)
+[tfm] fold 0 @epoch 19: seq acc 0.5568 (majority 0.4931) uar 0.2891 pred [0, 0, 1191, 632]
+[tfm] fold 1 @epoch 19: seq acc 0.5333 (majority 0.5327) uar 0.2833 pred [0, 0, 838, 827]
+[tfm] fold 2 @epoch 19: seq acc 0.5380 (majority 0.4872) uar 0.2852 pred [0, 1, 1231, 638]
+SEQD_CV_DONE
+SEQD_CV_EXIT 0

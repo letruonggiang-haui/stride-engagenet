@@ -1,0 +1,53 @@
+{
+ "quantity": "adjacent-clip label stability within one recording session",
+ "kappa_weighting": "unweighted",
+ "caveat": "This measures temporal stability of labels, not inter-annotator agreement on one clip. A low value is equally consistent with noisy labels and with genuinely fast-varying engagement; the measure cannot separate them.",
+ "DAiSEE_all_four_levels": {
+  "n_pairs": 8374,
+  "agreement": 0.5154048244566516,
+  "kappa": 0.12208239334775173,
+  "independent_expectation": 0.4480174769574916
+ },
+ "DAiSEE_restricted_to_levels_ge_2": {
+  "n_pairs": 7480,
+  "agreement": 0.5688502673796791,
+  "kappa": 0.13508940457092145,
+  "independent_expectation": 0.5015094798249878
+ },
+ "EngageNet_train_all_four_levels": {
+  "n_pairs": 7632,
+  "agreement": 0.6834381551362684,
+  "kappa": 0.534877199956966,
+  "independent_expectation": 0.31940157559585813
+ },
+ "EngageNet_train_restricted_to_levels_ge_2": {
+  "n_pairs": 4669,
+  "agreement": 0.7706146926536732,
+  "kappa": 0.4167808981680933,
+  "independent_expectation": 0.6066910246495332
+ },
+ "EngageNet_val_all_four_levels": {
+  "n_pairs": 1038,
+  "agreement": 0.651252408477842,
+  "kappa": 0.44661034921532583,
+  "independent_expectation": 0.36979740942452693
+ },
+ "EngageNet_val_restricted_to_levels_ge_2": {
+  "n_pairs": 760,
+  "agreement": 0.7039473684210527,
+  "kappa": 0.29440308977173324,
+  "independent_expectation": 0.5804224376731302
+ },
+ "EngageNet_test_all_four_levels": {
+  "n_pairs": 2181,
+  "agreement": 0.6923429619440623,
+  "kappa": 0.5348635199058699,
+  "independent_expectation": 0.338566095710926
+ },
+ "EngageNet_test_restricted_to_levels_ge_2": {
+  "n_pairs": 1317,
+  "agreement": 0.8283978739559605,
+  "kappa": 0.5005185416393971,
+  "independent_expectation": 0.656439447007159
+ }
+}

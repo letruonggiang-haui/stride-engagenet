@@ -1,0 +1,140 @@
+{
+ "args": {
+  "backbone": "maedfer",
+  "dataset": "engagenet",
+  "train_splits": "train,val",
+  "eval_split": "test",
+  "cv_folds": 0,
+  "cv_fold": -1,
+  "epochs": 12,
+  "warmup": 2,
+  "lr": 0.001,
+  "layer_decay": 0.75,
+  "wd": 0.05,
+  "batch": 16,
+  "accum": 2,
+  "lora": 16,
+  "frames": 16,
+  "stride": 20,
+  "smoothing": 0.1,
+  "ldl": 0.0,
+  "placeholder": false,
+  "balanced": false,
+  "drop_path": 0.1,
+  "ema": 0.999,
+  "tta_windows": 5,
+  "tta_flip": false,
+  "seed": 0,
+  "tag": "g8_maedfer_s0",
+  "workers": 12,
+  "max_train": 0,
+  "eval_only": "",
+  "open_official": true
+ },
+ "K": 4,
+ "n_train": 8950,
+ "n_eval": 2256,
+ "subjects_eval": 26,
+ "eval_class_counts": [
+  457,
+  246,
+  419,
+  1134
+ ],
+ "eval_majority_baseline": 0.5026595744680851,
+ "train_class_counts": [
+  1578,
+  1132,
+  1931,
+  4309
+ ],
+ "span_frames": 301,
+ "final": {
+  "epoch": 11,
+  "loss": 0.6241890699577672,
+  "acc": 0.6932624113475178,
+  "uar": 0.5507859804294194,
+  "macro_f1": 0.5681810508637429,
+  "pred_dist": [
+   312,
+   171,
+   444,
+   1329
+  ]
+ },
+ "final_raw_weights": {
+  "acc": 0.6799645390070922,
+  "uar": 0.5616819356323987,
+  "macro_f1": 0.5736098719327767,
+  "pred_dist": [
+   338,
+   221,
+   477,
+   1220
+  ]
+ },
+ "log": [
+  {
+   "epoch": 0,
+   "loss": 1.0712390013159068
+  },
+  {
+   "epoch": 1,
+   "loss": 0.8615376055773768
+  },
+  {
+   "epoch": 2,
+   "loss": 0.824929667926645
+  },
+  {
+   "epoch": 3,
+   "loss": 0.8041452727612102
+  },
+  {
+   "epoch": 4,
+   "loss": 0.7779229860186364
+  },
+  {
+   "epoch": 5,
+   "loss": 0.7513496033940631
+  },
+  {
+   "epoch": 6,
+   "loss": 0.72420534608829
+  },
+  {
+   "epoch": 7,
+   "loss": 0.7034609770412309
+  },
+  {
+   "epoch": 8,
+   "loss": 0.6732753264669442
+  },
+  {
+   "epoch": 9,
+   "loss": 0.653380945884691
+  },
+  {
+   "epoch": 10,
+   "loss": 0.6350527474513421
+  },
+  {
+   "epoch": 11,
+   "loss": 0.6241890699577672,
+   "acc": 0.6932624113475178,
+   "uar": 0.5507859804294194,
+   "macro_f1": 0.5681810508637429,
+   "pred_dist": [
+    312,
+    171,
+    444,
+    1329
+   ]
+  }
+ ],
+ "seconds": 2097.2443380355835,
+ "eval_set": "official_test",
+ "eval_is_official_split": true,
+ "tta_windows": 5,
+ "tta_flip": false
+}

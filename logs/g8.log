@@ -1,0 +1,286 @@
+=== g8_svfap_s0 Thu Sep 24 10:59:44 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 1071/11 (val)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.135 (official split not scored until the final epoch) 369s
+ep 1 loss 0.882 (official split not scored until the final epoch) 736s
+ep 2 loss 0.837 (official split not scored until the final epoch) 1102s
+ep 3 loss 0.808 (official split not scored until the final epoch) 1468s
+ep 4 loss 0.778 (official split not scored until the final epoch) 1836s
+ep 5 loss 0.754 (official split not scored until the final epoch) 2201s
+ep 6 loss 0.736 (official split not scored until the final epoch) 2569s
+ep 7 loss 0.713 (official split not scored until the final epoch) 2934s
+ep 8 loss 0.692 (official split not scored until the final epoch) 3300s
+ep 9 loss 0.670 (official split not scored until the final epoch) 3667s
+ep 10 loss 0.659 (official split not scored until the final epoch) 4034s
+ep 11 loss 0.654 acc 0.7218 uar 0.6223 f1 0.6414 [115, 58, 294, 604] 4499s
+final raw-weight (non-EMA) score: acc 0.7059 uar 0.6388 f1 0.6481
+majority baseline on this eval set: 0.5313 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s0_train {"epoch": 11, "loss": 0.6538028056786312, "acc": 0.7217553688141923, "uar": 0.6222890229489798, "macro_f1": 0.6413801416866997, "pred_dist": [115, 58, 294, 604]}
+EXIT g8_svfap_s0 0
+=== g8_svfap_s1 Thu Sep 24 12:17:32 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 1071/11 (val)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.133 (official split not scored until the final epoch) 369s
+ep 1 loss 0.892 (official split not scored until the final epoch) 736s
+ep 2 loss 0.839 (official split not scored until the final epoch) 1103s
+ep 3 loss 0.804 (official split not scored until the final epoch) 1469s
+ep 4 loss 0.781 (official split not scored until the final epoch) 1837s
+ep 5 loss 0.750 (official split not scored until the final epoch) 2202s
+ep 6 loss 0.733 (official split not scored until the final epoch) 2569s
+ep 7 loss 0.711 (official split not scored until the final epoch) 2935s
+ep 8 loss 0.694 (official split not scored until the final epoch) 3301s
+ep 9 loss 0.668 (official split not scored until the final epoch) 3668s
+ep 10 loss 0.654 (official split not scored until the final epoch) 4035s
+ep 11 loss 0.654 acc 0.7124 uar 0.6055 f1 0.6234 [112, 50, 316, 593] 4500s
+final raw-weight (non-EMA) score: acc 0.7059 uar 0.6117 f1 0.6273
+majority baseline on this eval set: 0.5313 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s1_train {"epoch": 11, "loss": 0.65405568074647, "acc": 0.7124183006535948, "uar": 0.6055185985147664, "macro_f1": 0.6234386256515445, "pred_dist": [112, 50, 316, 593]}
+EXIT g8_svfap_s1 0
+=== g8_svfap_s2 Thu Sep 24 13:35:21 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 1071/11 (val)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.122 (official split not scored until the final epoch) 367s
+ep 1 loss 0.882 (official split not scored until the final epoch) 735s
+ep 2 loss 0.839 (official split not scored until the final epoch) 1101s
+ep 3 loss 0.825 (official split not scored until the final epoch) 1469s
+ep 4 loss 0.776 (official split not scored until the final epoch) 1825s
+ep 5 loss 0.750 (official split not scored until the final epoch) 2192s
+ep 6 loss 0.729 (official split not scored until the final epoch) 2558s
+ep 7 loss 0.710 (official split not scored until the final epoch) 2924s
+ep 8 loss 0.688 (official split not scored until the final epoch) 3289s
+ep 9 loss 0.676 (official split not scored until the final epoch) 3653s
+ep 10 loss 0.659 (official split not scored until the final epoch) 4019s
+ep 11 loss 0.653 acc 0.7171 uar 0.6085 f1 0.6298 [109, 63, 283, 616] 4479s
+final raw-weight (non-EMA) score: acc 0.7003 uar 0.6098 f1 0.6252
+majority baseline on this eval set: 0.5313 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s2_train {"epoch": 11, "loss": 0.653104399277912, "acc": 0.7170868347338936, "uar": 0.6085064522683423, "macro_f1": 0.6297738837660373, "pred_dist": [109, 63, 283, 616]}
+EXIT g8_svfap_s2 0
+=== g8_maedfer_s0 Thu Sep 24 14:52:45 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 1071/11 (val)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+==> Note: Use 'local_global' for compute reduction (lg_region_size=(2, 5, 10),lg_first_attn_type=self, lg_third_attn_type=cross,lg_attn_param_sharing_first_third=False,lg_attn_param_sharing_all=False,lg_classify_token_type=region,lg_no_second=False, lg_no_third=False)
+==> Number of local regions: 8 (size=[4, 2, 1])
+loaded maedfer: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 96 trainable 1968132
+ep 0 loss 1.082 (official split not scored until the final epoch) 270s
+ep 1 loss 0.856 (official split not scored until the final epoch) 539s
+ep 2 loss 0.828 (official split not scored until the final epoch) 805s
+ep 3 loss 0.796 (official split not scored until the final epoch) 1073s
+ep 4 loss 0.772 (official split not scored until the final epoch) 1341s
+ep 5 loss 0.747 (official split not scored until the final epoch) 1598s
+ep 6 loss 0.722 (official split not scored until the final epoch) 1841s
+ep 7 loss 0.697 (official split not scored until the final epoch) 2085s
+ep 8 loss 0.673 (official split not scored until the final epoch) 2327s
+ep 9 loss 0.653 (official split not scored until the final epoch) 2570s
+ep 10 loss 0.633 (official split not scored until the final epoch) 2810s
+ep 11 loss 0.622 acc 0.6909 uar 0.5853 f1 0.6072 [108, 47, 310, 606] 3124s
+final raw-weight (non-EMA) score: acc 0.6639 uar 0.5897 f1 0.6007
+majority baseline on this eval set: 0.5313 (accuracy is only comparable within the same split)
+FT_DONE g8_maedfer_s0_train {"epoch": 11, "loss": 0.6224310515615029, "acc": 0.6909430438842203, "uar": 0.5853074095865302, "macro_f1": 0.6072163171254902, "pred_dist": [108, 47, 310, 606]}
+EXIT g8_maedfer_s0 0
+STAGE1_VAL_DONE
+=== g8_svfap_s0_trainonly_on_test Thu Sep 24 15:47:13 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+eval-only: loaded 80 tensors from ft_g8_svfap_s0_train.pt, missing 383 unexpected 0
+eval-only acc 0.6964 uar 0.5709 f1 0.5874 [323, 182, 486, 1265]
+final raw-weight (non-EMA) score: acc 0.6964 uar 0.5709 f1 0.5874
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s0_trainonly_on_test_train {"epoch": -1, "loss": NaN, "acc": 0.6963652482269503, "uar": 0.5709220337797769, "macro_f1": 0.5873739693400308, "pred_dist": [323, 182, 486, 1265]}
+EXIT g8_svfap_s0_trainonly_on_test 0
+=== g8_svfap_s1_trainonly_on_test Thu Sep 24 15:53:23 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+eval-only: loaded 80 tensors from ft_g8_svfap_s1_train.pt, missing 383 unexpected 0
+eval-only acc 0.7017 uar 0.5602 f1 0.5764 [309, 191, 453, 1303]
+final raw-weight (non-EMA) score: acc 0.7017 uar 0.5602 f1 0.5764
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s1_trainonly_on_test_train {"epoch": -1, "loss": NaN, "acc": 0.7016843971631206, "uar": 0.5601856709306642, "macro_f1": 0.5764123917019054, "pred_dist": [309, 191, 453, 1303]}
+EXIT g8_svfap_s1_trainonly_on_test 0
+=== g8_svfap_s2_trainonly_on_test Thu Sep 24 15:59:34 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+eval-only: loaded 80 tensors from ft_g8_svfap_s2_train.pt, missing 383 unexpected 0
+eval-only acc 0.6977 uar 0.5620 f1 0.5778 [312, 218, 440, 1286]
+final raw-weight (non-EMA) score: acc 0.6977 uar 0.5620 f1 0.5778
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s2_trainonly_on_test_train {"epoch": -1, "loss": NaN, "acc": 0.6976950354609929, "uar": 0.5619779570089971, "macro_f1": 0.5778044384295532, "pred_dist": [312, 218, 440, 1286]}
+EXIT g8_svfap_s2_trainonly_on_test 0
+=== g8_maedfer_s0_trainonly_on_test Thu Sep 24 16:05:45 UTC 2026
+engagenet K=4 train 7879 clips/91 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+==> Note: Use 'local_global' for compute reduction (lg_region_size=(2, 5, 10),lg_first_attn_type=self, lg_third_attn_type=cross,lg_attn_param_sharing_first_third=False,lg_attn_param_sharing_all=False,lg_classify_token_type=region,lg_no_second=False, lg_no_third=False)
+==> Number of local regions: 8 (size=[4, 2, 1])
+loaded maedfer: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 96 trainable 1968132
+eval-only: loaded 194 tensors from ft_g8_maedfer_s0_train.pt, missing 517 unexpected 0
+eval-only acc 0.6973 uar 0.5570 f1 0.5751 [311, 169, 445, 1331]
+final raw-weight (non-EMA) score: acc 0.6973 uar 0.5570 f1 0.5751
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_maedfer_s0_trainonly_on_test_train {"epoch": -1, "loss": NaN, "acc": 0.6972517730496454, "uar": 0.5570385130271022, "macro_f1": 0.5751476879599761, "pred_dist": [311, 169, 445, 1331]}
+EXIT g8_maedfer_s0_trainonly_on_test 0
+STAGE1B_TEST_DONE
+=== g8_svfap_s0 Thu Sep 24 16:10:51 UTC 2026
+engagenet K=4 train 8950 clips/102 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.112 (official split not scored until the final epoch) 375s
+ep 1 loss 0.874 (official split not scored until the final epoch) 750s
+ep 2 loss 0.842 (official split not scored until the final epoch) 1126s
+ep 3 loss 0.801 (official split not scored until the final epoch) 1500s
+ep 4 loss 0.776 (official split not scored until the final epoch) 1875s
+ep 5 loss 0.757 (official split not scored until the final epoch) 2249s
+ep 6 loss 0.730 (official split not scored until the final epoch) 2624s
+ep 7 loss 0.714 (official split not scored until the final epoch) 2998s
+ep 8 loss 0.694 (official split not scored until the final epoch) 3375s
+ep 9 loss 0.677 (official split not scored until the final epoch) 3738s
+ep 10 loss 0.657 (official split not scored until the final epoch) 4110s
+ep 11 loss 0.653 acc 0.6879 uar 0.5561 f1 0.5708 [309, 213, 466, 1268] 4655s
+final raw-weight (non-EMA) score: acc 0.6848 uar 0.5764 f1 0.5849
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s0_train-val {"epoch": 11, "loss": 0.6527001244650757, "acc": 0.6879432624113475, "uar": 0.5561191957894467, "macro_f1": 0.5707565779995849, "pred_dist": [309, 213, 466, 1268]}
+EXIT g8_svfap_s0 0
+=== g8_svfap_s1 Thu Sep 24 17:32:33 UTC 2026
+engagenet K=4 train 8950 clips/102 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.111 (official split not scored until the final epoch) 373s
+ep 1 loss 0.880 (official split not scored until the final epoch) 743s
+ep 2 loss 0.837 (official split not scored until the final epoch) 1112s
+ep 3 loss 0.806 (official split not scored until the final epoch) 1390s
+ep 4 loss 0.780 (official split not scored until the final epoch) 1609s
+ep 5 loss 0.758 (official split not scored until the final epoch) 1828s
+ep 6 loss 0.737 (official split not scored until the final epoch) 2048s
+ep 7 loss 0.716 (official split not scored until the final epoch) 2269s
+ep 8 loss 0.693 (official split not scored until the final epoch) 2489s
+ep 9 loss 0.673 (official split not scored until the final epoch) 2709s
+ep 10 loss 0.664 (official split not scored until the final epoch) 2929s
+ep 11 loss 0.655 acc 0.7057 uar 0.5680 f1 0.5807 [355, 161, 455, 1285] 3257s
+final raw-weight (non-EMA) score: acc 0.6928 uar 0.5741 f1 0.5823
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s1_train-val {"epoch": 11, "loss": 0.6547481620780897, "acc": 0.7056737588652482, "uar": 0.5679615684920981, "macro_f1": 0.580723163527931, "pred_dist": [355, 161, 455, 1285]}
+EXIT g8_svfap_s1 0
+=== g8_svfap_s2 Thu Sep 24 18:29:46 UTC 2026
+engagenet K=4 train 8950 clips/102 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.103 (official split not scored until the final epoch) 221s
+ep 1 loss 0.877 (official split not scored until the final epoch) 441s
+ep 2 loss 0.846 (official split not scored until the final epoch) 661s
+ep 3 loss 0.802 (official split not scored until the final epoch) 881s
+ep 4 loss 0.784 (official split not scored until the final epoch) 1100s
+ep 5 loss 0.760 (official split not scored until the final epoch) 1319s
+ep 6 loss 0.737 (official split not scored until the final epoch) 1539s
+ep 7 loss 0.713 (official split not scored until the final epoch) 1758s
+ep 8 loss 0.693 (official split not scored until the final epoch) 1977s
+ep 9 loss 0.671 (official split not scored until the final epoch) 2197s
+ep 10 loss 0.665 (official split not scored until the final epoch) 2416s
+ep 11 loss 0.655 acc 0.6973 uar 0.5632 f1 0.5795 [306, 207, 455, 1288] 2742s
+final raw-weight (non-EMA) score: acc 0.6902 uar 0.5782 f1 0.5889
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_svfap_s2_train-val {"epoch": 11, "loss": 0.6550589317925715, "acc": 0.6972517730496454, "uar": 0.5631775640182264, "macro_f1": 0.5795072265374306, "pred_dist": [306, 207, 455, 1288]}
+EXIT g8_svfap_s2 0
+=== g8_maedfer_s0 Thu Sep 24 19:18:21 UTC 2026
+engagenet K=4 train 8950 clips/102 subjects, eval 2256/26 (test)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+==> Note: Use 'local_global' for compute reduction (lg_region_size=(2, 5, 10),lg_first_attn_type=self, lg_third_attn_type=cross,lg_attn_param_sharing_first_third=False,lg_attn_param_sharing_all=False,lg_classify_token_type=region,lg_no_second=False, lg_no_third=False)
+==> Number of local regions: 8 (size=[4, 2, 1])
+loaded maedfer: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 96 trainable 1968132
+ep 0 loss 1.071 (official split not scored until the final epoch) 161s
+ep 1 loss 0.862 (official split not scored until the final epoch) 320s
+ep 2 loss 0.825 (official split not scored until the final epoch) 480s
+ep 3 loss 0.804 (official split not scored until the final epoch) 641s
+ep 4 loss 0.778 (official split not scored until the final epoch) 801s
+ep 5 loss 0.751 (official split not scored until the final epoch) 961s
+ep 6 loss 0.724 (official split not scored until the final epoch) 1121s
+ep 7 loss 0.703 (official split not scored until the final epoch) 1281s
+ep 8 loss 0.673 (official split not scored until the final epoch) 1441s
+ep 9 loss 0.653 (official split not scored until the final epoch) 1602s
+ep 10 loss 0.635 (official split not scored until the final epoch) 1762s
+ep 11 loss 0.624 acc 0.6933 uar 0.5508 f1 0.5682 [312, 171, 444, 1329] 2010s
+final raw-weight (non-EMA) score: acc 0.6800 uar 0.5617 f1 0.5736
+majority baseline on this eval set: 0.5027 (accuracy is only comparable within the same split)
+FT_DONE g8_maedfer_s0_train-val {"epoch": 11, "loss": 0.6241890699577672, "acc": 0.6932624113475178, "uar": 0.5507859804294194, "macro_f1": 0.5681810508637429, "pred_dist": [312, 171, 444, 1329]}
+EXIT g8_maedfer_s0 0
+STAGE2_TEST_DONE
+
+=== VAL_train_only: n 1071  subjects 11  majority 0.5313
+   ft_g8_maedfer_s0_train.npz                   acc 0.6909
+   ft_g8_svfap_s0_train.npz                     acc 0.7218
+   ft_g8_svfap_s1_train.npz                     acc 0.7124
+   ft_g8_svfap_s2_train.npz                     acc 0.7171
+   PIXEL_ENSEMBLE       acc 0.7134  CI [0.6206, 0.7924]  uar 0.6076  macroF1 0.6289  [110, 55, 295, 611]
+   geometry             acc 0.6695  CI [0.5697, 0.7632]  uar 0.5505  macroF1 0.5611  [123, 64, 240, 644]
+   FUSED_w05            acc 0.6863  CI [0.5933, 0.7744]  uar 0.5633  macroF1 0.5794  [115, 55, 256, 645]
+
+=== TEST_train_only: n 2256  subjects 26  majority 0.5027
+   ft_g8_maedfer_s0_trainonly_on_test_train.npz acc 0.6973
+   ft_g8_svfap_s0_trainonly_on_test_train.npz   acc 0.6964
+   ft_g8_svfap_s1_trainonly_on_test_train.npz   acc 0.7017
+   ft_g8_svfap_s2_trainonly_on_test_train.npz   acc 0.6977
+   PIXEL_ENSEMBLE       acc 0.7021  CI [0.6210, 0.7765]  uar 0.5625  macroF1 0.5799  [315, 181, 447, 1313]
+   geometry             acc 0.6817  CI [0.5944, 0.7664]  uar 0.5343  macroF1 0.5441  [417, 107, 378, 1354]
+   FUSED_w05            acc 0.6990  CI [0.6122, 0.7777]  uar 0.5528  macroF1 0.5644  [408, 94, 403, 1351]
+
+=== TEST_train_plus_val: n 2256  subjects 26  majority 0.5027
+   ft_g8_maedfer_s0_train-val.npz               acc 0.6933
+   ft_g8_svfap_s0_train-val.npz                 acc 0.6879
+   ft_g8_svfap_s1_train-val.npz                 acc 0.7057
+   ft_g8_svfap_s2_train-val.npz                 acc 0.6973
+   PIXEL_ENSEMBLE       acc 0.7004  CI [0.6219, 0.7714]  uar 0.5604  macroF1 0.5766  [325, 174, 445, 1312]
+   geometry             acc 0.6848  CI [0.5971, 0.7699]  uar 0.5355  macroF1 0.5467  [406, 106, 370, 1374]
+   FUSED_w05            acc 0.7026  CI [0.6174, 0.7823]  uar 0.5556  macroF1 0.5700  [393, 105, 385, 1373]
+
+G8_OFFICIAL_DONE

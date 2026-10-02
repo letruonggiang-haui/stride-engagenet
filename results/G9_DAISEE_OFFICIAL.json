@@ -1,0 +1,116 @@
+{
+ "VAL_train_only": {
+  "n": 1429,
+  "subjects": 19,
+  "majority": 0.5689293212036389,
+  "true_dist": [
+   23,
+   143,
+   813,
+   450
+  ],
+  "members": {
+   "ft_g9_maedfer_s0_train.npz": 0.6004198740377886,
+   "ft_g9_svfap_s0_train.npz": 0.6004198740377886,
+   "ft_g9_svfap_s1_train.npz": 0.5983205038488454,
+   "ft_g9_svfap_s2_train.npz": 0.596221133659902
+  },
+  "PIXEL_ENSEMBLE": {
+   "acc": 0.6004198740377886,
+   "ci": [
+    0.5625790878698668,
+    0.6339189093410962
+   ],
+   "uar": 0.2963325133251332,
+   "macro_f1": 0.2768868268627537,
+   "per_class_recall": [
+    0.0,
+    0.0,
+    0.8942189421894219,
+    0.2911111111111111
+   ],
+   "pred_dist": [
+    0,
+    0,
+    1197,
+    232
+   ]
+  }
+ },
+ "TEST_train_only": {
+  "n": 1784,
+  "subjects": 21,
+  "majority": 0.4943946188340807,
+  "true_dist": [
+   4,
+   84,
+   882,
+   814
+  ],
+  "members": {
+   "ft_g9_maedfer_s0_trainonly_on_test_train.npz": 0.5173766816143498,
+   "ft_g9_svfap_s0_trainonly_on_test_train.npz": 0.5297085201793722,
+   "ft_g9_svfap_s1_trainonly_on_test_train.npz": 0.570067264573991,
+   "ft_g9_svfap_s2_trainonly_on_test_train.npz": 0.5358744394618834
+  },
+  "PIXEL_ENSEMBLE": {
+   "acc": 0.5330717488789237,
+   "ci": [
+    0.49106683568489123,
+    0.575742985510114
+   ],
+   "uar": 0.278697760840618,
+   "macro_f1": 0.2709844417258147,
+   "per_class_recall": [
+    0.0,
+    0.0,
+    0.6405895691609977,
+    0.4742014742014742
+   ],
+   "pred_dist": [
+    0,
+    0,
+    1064,
+    720
+   ]
+  }
+ },
+ "TEST_train_plus_val": {
+  "n": 1784,
+  "subjects": 21,
+  "majority": 0.4943946188340807,
+  "true_dist": [
+   4,
+   84,
+   882,
+   814
+  ],
+  "members": {
+   "ft_g9_maedfer_s0_train-val.npz": 0.547645739910314,
+   "ft_g9_svfap_s0_train-val.npz": 0.5723094170403588,
+   "ft_g9_svfap_s1_train-val.npz": 0.577914798206278,
+   "ft_g9_svfap_s2_train-val.npz": 0.5633408071748879
+  },
+  "PIXEL_ENSEMBLE": {
+   "acc": 0.5723094170403588,
+   "ci": [
+    0.5318769927218286,
+    0.612185088274934
+   ],
+   "uar": 0.296715778858636,
+   "macro_f1": 0.28216552146238827,
+   "per_class_recall": [
+    0.0,
+    0.0,
+    0.8072562358276644,
+    0.3796068796068796
+   ],
+   "pred_dist": [
+    0,
+    0,
+    1299,
+    485
+   ]
+  }
+ }
+}
