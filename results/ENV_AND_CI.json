@@ -1,0 +1,48 @@
+{
+  "environment": {
+    "cuda_available": true,
+    "cudnn": 90100,
+    "cv2": "5.0.0",
+    "gpu_capability": "8.9",
+    "gpu_memory_MiB": 22565,
+    "gpu_name": "NVIDIA L4",
+    "insightface": "2.0",
+    "numpy": "2.4.6",
+    "nvidia_smi": "NVIDIA L4, 595.71.05, 23034 MiB",
+    "onnxruntime": "1.30.0",
+    "pandas": "3.0.5",
+    "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42",
+    "python": "3.11.16",
+    "sklearn": "1.9.1",
+    "torch": "2.6.0+cu124",
+    "torch.version.cuda": "12.4"
+  },
+  "interval": {
+    "accuracy_pct": 69.16,
+    "ci_pct": [
+      62.33,
+      75.89
+    ],
+    "manuscript_says": {
+      "accuracy": 69.16,
+      "ci": [
+        62.39,
+        75.93
+      ],
+      "width": 13.5
+    },
+    "n_clips": 2448,
+    "n_subjects": 31,
+    "predictions_file": "$HOME/engagenet_p2_crossdomain/preds/ft_g7_svfap_f0_s2_train.npz",
+    "reproduces": false,
+    "width_pct": 13.56
+  },
+  "parameters": {
+    "maedfer_error": "AttributeError(\"module 'modeling_finetune' has no attribute 'vit_base_dim512_no_depth_patch16_160'\")",
+    "svfap_lora_modules": 39,
+    "svfap_matches_log": true,
+    "svfap_total": 77633812,
+    "svfap_total_with_adapters": 78690580,
+    "svfap_trainable_rank16": 1058820
+  }
+}
