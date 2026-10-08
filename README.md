@@ -28,7 +28,7 @@ gates were missed and no official split was opened for any of them.
 
 `code/verify_v3_v6_numbers.py` regenerates, at the printed rounding, every value the manuscript reports
 from those campaigns and from the full count of clip lengths, and exits non-zero on any mismatch. Run on
-the deposited `results/`, it reports 80 values and no mismatch, and the three gate scripts reproduce
+the deposited `results/`, it reports every value checked and no mismatch, and the three gate scripts reproduce
 `GATE_V3.json`, `GATE_V5.json` and `GATE_V6.json` exactly.
 
 The design records are byte-identical to the files whose sha256 the gate scripts carry. In the result

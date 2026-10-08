@@ -94,6 +94,14 @@ pre = [J(f"PRE_{r}_pre_f{f}.json")["log"] for r in ("v5", "v6") for f in range(3
 checks.append(("pretraining loss, first epoch", "0.57 to 0.59", "%.2f to %.2f" % (min(l[0]["loss"] for l in pre), max(l[0]["loss"] for l in pre))))
 checks.append(("pretraining loss, last epoch", "0.37 to 0.38", "%.2f to %.2f" % (min(l[-1]["loss"] for l in pre), max(l[-1]["loss"] for l in pre))))
 checks.append(("pretraining epochs", "30", str(len(pre[0]))))
+# the optimiser constants Article S1, Section C.8 prints, read from the args of all six pretraining runs
+pargs = [J(f"PRE_{r}_pre_f{f}.json")["args"] for r in ("v5", "v6") for f in range(3)]
+for name, printed, key, fmt in (("pretraining learning rate", "1e-4", "lr", "%.0e"), ("pretraining final learning rate", "1e-6", "min_lr", "%.0e"),
+                                ("pretraining weight decay", "0.05", "wd", "%.2f"), ("pretraining warm-up epochs", "2", "warmup", "%d"),
+                                ("pretraining batch, clips", "32", "batch", "%d"), ("pretraining mask ratio", "0.9", "mask_ratio", "%.1f")):
+    vals = {(fmt % a[key]).replace("e-0", "e-") for a in pargs}
+    checks.append((name, printed, vals.pop() if len(vals) == 1 else "differs across runs: %s" % sorted(vals)))
+checks.append(("pretraining accumulation", "1", str({a["accum"] for a in pargs}.pop())))
 checks.append(("S9 excluded students", "7, 4, 2", ", ".join(str(len(K["folds"][f]["excluded_students"])) for f in "012")))
 checks.append(("S9 smoothing strength", "50, 20, 50", ", ".join(str(K["folds"][f]["alpha_chosen_on_other_folds"]) for f in "012")))
 
