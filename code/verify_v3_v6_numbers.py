@@ -102,6 +102,11 @@ for name, printed, key, fmt in (("pretraining learning rate", "1e-4", "lr", "%.0
     vals = {(fmt % a[key]).replace("e-0", "e-") for a in pargs}
     checks.append((name, printed, vals.pop() if len(vals) == 1 else "differs across runs: %s" % sorted(vals)))
 checks.append(("pretraining accumulation", "1", str({a["accum"] for a in pargs}.pop())))
+PCI = J("PAIRED_CI_V3.json")
+checks.append(("paired CI, CMS - 61-frame", "+0.0688, +0.1046", "%+.4f, %+.4f" % tuple(PCI["CMS_minus_61_frame_window"]["ci95"])))
+checks.append(("paired CI point, CMS - 61-frame", "+0.0865", r4(PCI["CMS_minus_61_frame_window"]["point"])))
+checks.append(("paired CI, consensus - CMS", "-0.0656, -0.0356", "%+.4f, %+.4f" % tuple(PCI["segment_consensus_minus_CMS"]["ci95"])))
+checks.append(("CMS seed ranges across folds, min to max", "0.0059 to 0.0212", "%.4f to %.4f" % (min(np.ptp(C["macro_f1"], 1)), max(np.ptp(C["macro_f1"], 1)))))
 checks.append(("S9 excluded students", "7, 4, 2", ", ".join(str(len(K["folds"][f]["excluded_students"])) for f in "012")))
 checks.append(("S9 smoothing strength", "50, 20, 50", ", ".join(str(K["folds"][f]["alpha_chosen_on_other_folds"]) for f in "012")))
 

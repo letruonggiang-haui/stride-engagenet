@@ -1,0 +1,24 @@
+{
+ "method": "paired subject-level bootstrap within inner folds, B = 2000, default_rng(0), percentile; estimand = mean over nine (fold, seed) pairs of the macro-F1 difference",
+ "subjects_per_fold": [
+  31,
+  30,
+  30
+ ],
+ "CMS_minus_61_frame_window": {
+  "point": 0.08653711680149007,
+  "ci95": [
+   0.06876434953889518,
+   0.10455768778793391
+  ],
+  "share_of_resamples_above_zero": 1.0
+ },
+ "segment_consensus_minus_CMS": {
+  "point": -0.051337488323102,
+  "ci95": [
+   -0.06561034144318993,
+   -0.03557553581914704
+  ],
+  "share_of_resamples_above_zero": 0.0
+ }
+}
