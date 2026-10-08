@@ -1,0 +1,378 @@
+{
+ "method": "paired subject-level bootstrap of the accuracy difference, B = 2000, default_rng(0), one set of subject draws per scoring shared by all pairs, percentile 2.5 / 97.5; post hoc, written 2026-10-08",
+ "primary_pair": "PIXEL_ENSEMBLE - geometry",
+ "scorings": {
+  "VAL_train_only": {
+   "n": 1071,
+   "subjects": 11,
+   "reproduces_G8_OFFICIAL": {
+    "maedfer_s0": true,
+    "svfap_s0": true,
+    "svfap_s1": true,
+    "svfap_s2": true,
+    "PIXEL_ENSEMBLE": true,
+    "geometry": true,
+    "FUSED_w05": true
+   },
+   "recomputed_vs_deposited_acc": {
+    "maedfer_s0": [
+     0.6909430438842203,
+     0.6909430438842203
+    ],
+    "svfap_s0": [
+     0.7217553688141923,
+     0.7217553688141923
+    ],
+    "svfap_s1": [
+     0.7124183006535948,
+     0.7124183006535948
+    ],
+    "svfap_s2": [
+     0.7170868347338936,
+     0.7170868347338936
+    ],
+    "PIXEL_ENSEMBLE": [
+     0.7133520074696545,
+     0.7133520074696545
+    ],
+    "geometry": [
+     0.6694677871148459,
+     0.6694677871148459
+    ],
+    "FUSED_w05": [
+     0.6862745098039216,
+     0.6862745098039216
+    ]
+   },
+   "pairs": {
+    "PIXEL_ENSEMBLE - geometry": {
+     "point_pts": 4.388422035480866,
+     "ci_pts": [
+      -0.9340383880825023,
+      11.463277365302082
+     ],
+     "width_pts": 12.397315753384582,
+     "share_above_zero": 0.9275
+    },
+    "FUSED_w05 - PIXEL_ENSEMBLE": {
+     "point_pts": -2.7077497665732975,
+     "ci_pts": [
+      -8.891061981939485,
+      1.8870481157641747
+     ],
+     "width_pts": 10.77811009770366,
+     "share_above_zero": 0.168
+    },
+    "maedfer_s0 - svfap_s0": {
+     "point_pts": -3.081232492997199,
+     "ci_pts": [
+      -7.884315632354102,
+      0.0938108324745243
+     ],
+     "width_pts": 7.978126464828626,
+     "share_above_zero": 0.0335
+    },
+    "maedfer_s0 - svfap_s1": {
+     "point_pts": -2.147525676937445,
+     "ci_pts": [
+      -5.812076685923969,
+      0.5634067812330228
+     ],
+     "width_pts": 6.375483467156992,
+     "share_above_zero": 0.0705
+    },
+    "maedfer_s0 - svfap_s2": {
+     "point_pts": -2.614379084967322,
+     "ci_pts": [
+      -5.871829465731246,
+      -0.17458224316281692
+     ],
+     "width_pts": 5.697247222568429,
+     "share_above_zero": 0.017
+    },
+    "svfap_s0 - svfap_s1": {
+     "point_pts": 0.9337068160597539,
+     "ci_pts": [
+      -0.4771772914684418,
+      2.571838615663766
+     ],
+     "width_pts": 3.0490159071322074,
+     "share_above_zero": 0.877
+    },
+    "svfap_s0 - svfap_s2": {
+     "point_pts": 0.46685340802987696,
+     "ci_pts": [
+      -1.1288805268109052,
+      2.3381294964028854
+     ],
+     "width_pts": 3.46701002321379,
+     "share_above_zero": 0.686
+    },
+    "svfap_s1 - svfap_s2": {
+     "point_pts": -0.46685340802987696,
+     "ci_pts": [
+      -2.242490696438062,
+      1.1819260119442616
+     ],
+     "width_pts": 3.4244167083823234,
+     "share_above_zero": 0.2965
+    }
+   },
+   "ensemble_marginal_same_draws": {
+    "ci_pts": [
+     62.74253560732493,
+     79.39730116439708
+    ],
+    "width_pts": 16.65476555707214
+   }
+  },
+  "TEST_train_only": {
+   "n": 2256,
+   "subjects": 26,
+   "reproduces_G8_OFFICIAL": {
+    "maedfer_s0": true,
+    "svfap_s0": true,
+    "svfap_s1": true,
+    "svfap_s2": true,
+    "PIXEL_ENSEMBLE": true,
+    "geometry": true,
+    "FUSED_w05": true
+   },
+   "recomputed_vs_deposited_acc": {
+    "maedfer_s0": [
+     0.6972517730496454,
+     0.6972517730496454
+    ],
+    "svfap_s0": [
+     0.6963652482269503,
+     0.6963652482269503
+    ],
+    "svfap_s1": [
+     0.7016843971631206,
+     0.7016843971631206
+    ],
+    "svfap_s2": [
+     0.6976950354609929,
+     0.6976950354609929
+    ],
+    "PIXEL_ENSEMBLE": [
+     0.7021276595744681,
+     0.7021276595744681
+    ],
+    "geometry": [
+     0.6817375886524822,
+     0.6817375886524822
+    ],
+    "FUSED_w05": [
+     0.6990248226950354,
+     0.6990248226950354
+    ]
+   },
+   "pairs": {
+    "PIXEL_ENSEMBLE - geometry": {
+     "point_pts": 2.039007092198586,
+     "ci_pts": [
+      -1.4148318652815264,
+      5.201477293505284
+     ],
+     "width_pts": 6.616309158786811,
+     "share_above_zero": 0.8895
+    },
+    "FUSED_w05 - PIXEL_ENSEMBLE": {
+     "point_pts": -0.3102836879432691,
+     "ci_pts": [
+      -2.9103749948898776,
+      2.713216556853916
+     ],
+     "width_pts": 5.623591551743794,
+     "share_above_zero": 0.3915
+    },
+    "maedfer_s0 - svfap_s0": {
+     "point_pts": 0.08865248226950229,
+     "ci_pts": [
+      -1.8888775212674014,
+      2.0804521276595764
+     ],
+     "width_pts": 3.969329648926978,
+     "share_above_zero": 0.527
+    },
+    "maedfer_s0 - svfap_s1": {
+     "point_pts": -0.44326241134752253,
+     "ci_pts": [
+      -2.5634482093398216,
+      1.3355352511194203
+     ],
+     "width_pts": 3.8989834604592417,
+     "share_above_zero": 0.3185
+    },
+    "maedfer_s0 - svfap_s2": {
+     "point_pts": -0.04432624113475114,
+     "ci_pts": [
+      -2.2163425297753667,
+      1.8556161607951573
+     ],
+     "width_pts": 4.071958690570524,
+     "share_above_zero": 0.4705
+    },
+    "svfap_s0 - svfap_s1": {
+     "point_pts": -0.5319148936170248,
+     "ci_pts": [
+      -3.363524974620993,
+      1.85175180959515
+     ],
+     "width_pts": 5.215276784216143,
+     "share_above_zero": 0.3265
+    },
+    "svfap_s0 - svfap_s2": {
+     "point_pts": -0.13297872340425343,
+     "ci_pts": [
+      -2.5546641246935042,
+      2.1124956003074633
+     ],
+     "width_pts": 4.6671597250009675,
+     "share_above_zero": 0.437
+    },
+    "svfap_s1 - svfap_s2": {
+     "point_pts": 0.3989361702127714,
+     "ci_pts": [
+      -0.8561464397035623,
+      1.6615384835391784
+     ],
+     "width_pts": 2.5176849232427405,
+     "share_above_zero": 0.746
+    }
+   },
+   "ensemble_marginal_same_draws": {
+    "ci_pts": [
+     62.371968676414824,
+     77.66671744368315
+    ],
+    "width_pts": 15.294748767268329
+   }
+  },
+  "TEST_train_plus_val": {
+   "n": 2256,
+   "subjects": 26,
+   "reproduces_G8_OFFICIAL": {
+    "maedfer_s0": true,
+    "svfap_s0": true,
+    "svfap_s1": true,
+    "svfap_s2": true,
+    "PIXEL_ENSEMBLE": true,
+    "geometry": true,
+    "FUSED_w05": true
+   },
+   "recomputed_vs_deposited_acc": {
+    "maedfer_s0": [
+     0.6932624113475178,
+     0.6932624113475178
+    ],
+    "svfap_s0": [
+     0.6879432624113475,
+     0.6879432624113475
+    ],
+    "svfap_s1": [
+     0.7056737588652482,
+     0.7056737588652482
+    ],
+    "svfap_s2": [
+     0.6972517730496454,
+     0.6972517730496454
+    ],
+    "PIXEL_ENSEMBLE": [
+     0.700354609929078,
+     0.700354609929078
+    ],
+    "geometry": [
+     0.6848404255319149,
+     0.6848404255319149
+    ],
+    "FUSED_w05": [
+     0.7025709219858156,
+     0.7025709219858156
+    ]
+   },
+   "pairs": {
+    "PIXEL_ENSEMBLE - geometry": {
+     "point_pts": 1.5514184397163122,
+     "ci_pts": [
+      -1.847782885961282,
+      4.773182587574452
+     ],
+     "width_pts": 6.620965473535733,
+     "share_above_zero": 0.8175
+    },
+    "FUSED_w05 - PIXEL_ENSEMBLE": {
+     "point_pts": 0.22163120567375572,
+     "ci_pts": [
+      -2.603020435802688,
+      3.2891154586711666
+     ],
+     "width_pts": 5.892135894473855,
+     "share_above_zero": 0.535
+    },
+    "maedfer_s0 - svfap_s0": {
+     "point_pts": 0.5319148936170248,
+     "ci_pts": [
+      -2.5276308525226603,
+      3.5028916616698575
+     ],
+     "width_pts": 6.030522514192517,
+     "share_above_zero": 0.6145
+    },
+    "maedfer_s0 - svfap_s1": {
+     "point_pts": -1.241134751773043,
+     "ci_pts": [
+      -3.536739264880403,
+      0.854064677744451
+     ],
+     "width_pts": 4.390803942624854,
+     "share_above_zero": 0.124
+    },
+    "maedfer_s0 - svfap_s2": {
+     "point_pts": -0.3989361702127603,
+     "ci_pts": [
+      -2.913012468557085,
+      1.8496178914902988
+     ],
+     "width_pts": 4.762630360047384,
+     "share_above_zero": 0.359
+    },
+    "svfap_s0 - svfap_s1": {
+     "point_pts": -1.773049645390068,
+     "ci_pts": [
+      -3.6614413821297918,
+      -0.08741319227710515
+     ],
+     "width_pts": 3.574028189852686,
+     "share_above_zero": 0.018
+    },
+    "svfap_s0 - svfap_s2": {
+     "point_pts": -0.9308510638297851,
+     "ci_pts": [
+      -2.9178558237921046,
+      1.0413347590880981
+     ],
+     "width_pts": 3.9591905828802023,
+     "share_above_zero": 0.172
+    },
+    "svfap_s1 - svfap_s2": {
+     "point_pts": 0.8421985815602828,
+     "ci_pts": [
+      -0.5410340540125083,
+      2.330938735138849
+     ],
+     "width_pts": 2.8719727891513576,
+     "share_above_zero": 0.857
+    }
+   },
+   "ensemble_marginal_same_draws": {
+    "ci_pts": [
+     62.24217308009836,
+     77.26732041849976
+    ],
+    "width_pts": 15.025147338401402
+   }
+  }
+ }
+}

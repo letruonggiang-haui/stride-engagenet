@@ -64,6 +64,24 @@ confirmed with the dataset authors whether a grant made today carries them. A
 reader given only the training and validation partitions can reproduce the
 inner-fold numbers but not the scores on the official test split.
 
+## Added on 8 October 2026, after a second review round
+
+Three analyses that train nothing and open no split, each with a write-once output and checked, with the values the
+manuscript prints, by `code/verify_rev_b.py`:
+
+- `code/paired_official_ci.py` -> `results/PAIRED_OFFICIAL_CI.json`: paired subject-level intervals on the accuracy
+  difference between systems of this work on the official splits, from the per-clip predictions of the official runs
+  (Article S1, Table S12). Every point accuracy reproduces `G8_OFFICIAL.json`.
+- `code/final_weights_and_time.py` -> `results/FINAL_WEIGHTS_AND_TIME.json`: the last-weight score against the EMA
+  average, and the wall-clock time, of every inner-fold run under the locked schedule (Article S1, Table S11).
+- `code/g8_official_fusion.py`: the fusion and scoring step that wrote `G8_OFFICIAL.json` on 25 September, which ran
+  inline in the official queue; deposited byte for byte below a guard line, and rerun on a scratch copy it reproduces
+  `G8_OFFICIAL.json` field for field.
+
+The environment block of `results/ENV_AND_CI.json` was read by a different interpreter (Python 3.11.16) from the one
+the runs used (Python 3.13.13, named in `logs/v3.log`, `v5.log` and `v6.log`), so it does not describe the runs;
+Article S1, Section B.2 gives the run interpreter's versions. The interval block of the same file is unaffected.
+
 ## Running it
 
 The preprocessing, the window sampler, both streams, the pre-registered gates and

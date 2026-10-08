@@ -1,0 +1,237 @@
+{
+ "note": "Final weights against the EMA weight average, and wall-clock time per run, for every EngageNet inner-fold run\nunder the locked schedule (12 epochs, EMA 0.999, lr 1e-3). Read-only over the deposited result files; it trains\nnothing and opens no official split. Written on 8 October 2026, after every campaign, as a post-hoc reading.",
+ "rows": [
+  {
+   "arm": "Locked recipe, 16 frames at stride 20",
+   "campaign": "first",
+   "runs": 6,
+   "final_ahead_macro_f1": 4,
+   "mean_diff_macro_f1": 0.009054948924860992,
+   "mean_diff_uar": 0.021656236873295487,
+   "mean_diff_acc": -0.012869305086908922,
+   "seconds_median": 6201.669172883034,
+   "seconds_min": 4246.882519483566,
+   "seconds_max": 7908.9550223350525,
+   "files": [
+    "FT_g6_ep12_ema999_train.json",
+    "FT_g7_maedfer_f0_s0_train.json",
+    "FT_g7_svfap_f0_s1_train.json",
+    "FT_g7_svfap_f0_s2_train.json",
+    "FT_g7_svfap_f1_s0_train.json",
+    "FT_g7_svfap_f2_s0_train.json"
+   ]
+  },
+  {
+   "arm": "A, 16 frames at stride 19",
+   "campaign": "second",
+   "runs": 3,
+   "final_ahead_macro_f1": 3,
+   "mean_diff_macro_f1": 0.03403000029649694,
+   "mean_diff_uar": 0.041987587414642404,
+   "mean_diff_acc": 0.009401799355593562,
+   "seconds_median": 3143.5921173095703,
+   "seconds_min": 3130.767110347748,
+   "seconds_max": 3218.3746376037598,
+   "files": [
+    "FT_v2_T16_f0_train.json",
+    "FT_v2_T16_f1_train.json",
+    "FT_v2_T16_f2_train.json"
+   ]
+  },
+  {
+   "arm": "B, 16 frames at stride 9",
+   "campaign": "second",
+   "runs": 3,
+   "final_ahead_macro_f1": 2,
+   "mean_diff_macro_f1": 0.017577673671949918,
+   "mean_diff_uar": 0.027253812755041906,
+   "mean_diff_acc": -0.0014833108141428426,
+   "seconds_median": 5017.7390077114105,
+   "seconds_min": 4483.389722108841,
+   "seconds_max": 5318.541609048843,
+   "files": [
+    "FT_v2_T16s9_f0_train.json",
+    "FT_v2_T16s9_f1_train.json",
+    "FT_v2_T16s9_f2_train.json"
+   ]
+  },
+  {
+   "arm": "C, 32 frames at stride 9",
+   "campaign": "second",
+   "runs": 3,
+   "final_ahead_macro_f1": 2,
+   "mean_diff_macro_f1": 0.019577872936383005,
+   "mean_diff_uar": 0.026210246256480423,
+   "mean_diff_acc": -0.008114479091169802,
+   "seconds_median": 9717.066873788834,
+   "seconds_min": 9590.70979809761,
+   "seconds_max": 9971.481395244598,
+   "files": [
+    "FT_v2_T32_f0_train.json",
+    "FT_v2_T32_f1_train.json",
+    "FT_v2_T32_f2_train.json"
+   ]
+  },
+  {
+   "arm": "D, 48 frames at stride 6",
+   "campaign": "second",
+   "runs": 3,
+   "final_ahead_macro_f1": 3,
+   "mean_diff_macro_f1": 0.03272735124041234,
+   "mean_diff_uar": 0.03693638248917706,
+   "mean_diff_acc": 0.00264006224159119,
+   "seconds_median": 18949.527998209,
+   "seconds_min": 18735.811264514923,
+   "seconds_max": 20491.78708600998,
+   "files": [
+    "FT_v2_T48_f0_train.json",
+    "FT_v2_T48_f1_train.json",
+    "FT_v2_T48_f2_train.json"
+   ]
+  },
+  {
+   "arm": "61-frame window, 16 frames at stride 4",
+   "campaign": "third",
+   "runs": 9,
+   "final_ahead_macro_f1": 7,
+   "mean_diff_macro_f1": 0.0232107589216667,
+   "mean_diff_uar": 0.02656912431274238,
+   "mean_diff_acc": -0.005282265540452833,
+   "seconds_median": 5489.5853226184845,
+   "seconds_min": 3101.924573659897,
+   "seconds_max": 5629.919127941132,
+   "files": [
+    "FT_v3_R_f0_s0_train.json",
+    "FT_v3_R_f0_s1_train.json",
+    "FT_v3_R_f0_s2_train.json",
+    "FT_v3_R_f1_s0_train.json",
+    "FT_v3_R_f1_s1_train.json",
+    "FT_v3_R_f1_s2_train.json",
+    "FT_v3_R_f2_s0_train.json",
+    "FT_v3_R_f2_s1_train.json",
+    "FT_v3_R_f2_s2_train.json"
+   ]
+  },
+  {
+   "arm": "Segment consensus",
+   "campaign": "third",
+   "runs": 9,
+   "final_ahead_macro_f1": 9,
+   "mean_diff_macro_f1": 0.029637459033547493,
+   "mean_diff_uar": 0.032444943889078814,
+   "mean_diff_acc": 0.005555744257402055,
+   "seconds_median": 9339.862599134445,
+   "seconds_min": 9089.777296543121,
+   "seconds_max": 16687.72359061241,
+   "files": [
+    "FT_v3_S_f0_s0_train.json",
+    "FT_v3_S_f0_s1_train.json",
+    "FT_v3_S_f0_s2_train.json",
+    "FT_v3_S_f1_s0_train.json",
+    "FT_v3_S_f1_s1_train.json",
+    "FT_v3_S_f1_s2_train.json",
+    "FT_v3_S_f2_s0_train.json",
+    "FT_v3_S_f2_s1_train.json",
+    "FT_v3_S_f2_s2_train.json"
+   ]
+  },
+  {
+   "arm": "CMS (proposed)",
+   "campaign": "third",
+   "runs": 9,
+   "final_ahead_macro_f1": 7,
+   "mean_diff_macro_f1": 0.016916233853006852,
+   "mean_diff_uar": 0.025222787105734643,
+   "mean_diff_acc": 0.0017150153099268915,
+   "seconds_median": 3147.2243201732635,
+   "seconds_min": 3103.61420750618,
+   "seconds_max": 3237.7439634799957,
+   "files": [
+    "FT_v3_C_f0_s0_train.json",
+    "FT_v3_C_f0_s1_train.json",
+    "FT_v3_C_f0_s2_train.json",
+    "FT_v3_C_f1_s0_train.json",
+    "FT_v3_C_f1_s1_train.json",
+    "FT_v3_C_f1_s2_train.json",
+    "FT_v3_C_f2_s0_train.json",
+    "FT_v3_C_f2_s1_train.json",
+    "FT_v3_C_f2_s2_train.json"
+   ]
+  },
+  {
+   "arm": "CMS after continued pretraining",
+   "campaign": "fifth",
+   "runs": 9,
+   "final_ahead_macro_f1": 6,
+   "mean_diff_macro_f1": 0.014328768728889848,
+   "mean_diff_uar": 0.022512605090490453,
+   "mean_diff_acc": -0.003926623055506136,
+   "seconds_median": 3151.2184340953827,
+   "seconds_min": 3107.311580657959,
+   "seconds_max": 3230.241309404373,
+   "files": [
+    "FT_v5_P_f0_s0_train.json",
+    "FT_v5_P_f0_s1_train.json",
+    "FT_v5_P_f0_s2_train.json",
+    "FT_v5_P_f1_s0_train.json",
+    "FT_v5_P_f1_s1_train.json",
+    "FT_v5_P_f1_s2_train.json",
+    "FT_v5_P_f2_s0_train.json",
+    "FT_v5_P_f2_s1_train.json",
+    "FT_v5_P_f2_s2_train.json"
+   ]
+  },
+  {
+   "arm": "CMS",
+   "campaign": "sixth",
+   "runs": 9,
+   "final_ahead_macro_f1": 8,
+   "mean_diff_macro_f1": 0.019335355987365577,
+   "mean_diff_uar": 0.028718234180313273,
+   "mean_diff_acc": 0.002310557359921978,
+   "seconds_median": 3142.010055541992,
+   "seconds_min": 3105.8277888298035,
+   "seconds_max": 5669.063831329346,
+   "files": [
+    "FT_v6_C_f0_s3_train.json",
+    "FT_v6_C_f0_s4_train.json",
+    "FT_v6_C_f0_s5_train.json",
+    "FT_v6_C_f1_s3_train.json",
+    "FT_v6_C_f1_s4_train.json",
+    "FT_v6_C_f1_s5_train.json",
+    "FT_v6_C_f2_s3_train.json",
+    "FT_v6_C_f2_s4_train.json",
+    "FT_v6_C_f2_s5_train.json"
+   ]
+  },
+  {
+   "arm": "CMS after continued pretraining",
+   "campaign": "sixth",
+   "runs": 9,
+   "final_ahead_macro_f1": 6,
+   "mean_diff_macro_f1": 0.018161236156738543,
+   "mean_diff_uar": 0.02731357480603432,
+   "mean_diff_acc": -0.001068318486474657,
+   "seconds_median": 3145.2551918029785,
+   "seconds_min": 3105.048846721649,
+   "seconds_max": 5679.4305827617645,
+   "files": [
+    "FT_v6_P_f0_s3_train.json",
+    "FT_v6_P_f0_s4_train.json",
+    "FT_v6_P_f0_s5_train.json",
+    "FT_v6_P_f1_s3_train.json",
+    "FT_v6_P_f1_s4_train.json",
+    "FT_v6_P_f1_s5_train.json",
+    "FT_v6_P_f2_s3_train.json",
+    "FT_v6_P_f2_s4_train.json",
+    "FT_v6_P_f2_s5_train.json"
+   ]
+  }
+ ],
+ "summary": {
+  "runs": 72,
+  "final_ahead_macro_f1": 57,
+  "final_ahead_uar": 67,
+  "final_ahead_acc": 42
+ }
+}
