@@ -1,0 +1,21 @@
+{
+ "note": "code/count_params.py, one fresh process per backbone, run interpreter ~/venvs/engagenet/bin/python, 2026-10-08",
+ "counts": [
+  {
+   "backbone": "svfap",
+   "total": 77633812,
+   "lora_modules": 39,
+   "trainable_rank16": 1058820,
+   "python": "3.13.13",
+   "torch": "2.6.0+cu124"
+  },
+  {
+   "backbone": "maedfer",
+   "total": 84876804,
+   "lora_modules": 96,
+   "trainable_rank16": 1968132,
+   "python": "3.13.13",
+   "torch": "2.6.0+cu124"
+  }
+ ]
+}

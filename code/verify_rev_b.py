@@ -111,6 +111,36 @@ checks.append(("w sweep around 0.5, from the record of 22 September", "0.6846 0.
                " ".join("0." + x for x in m.groups()) if m else "record not found beside results/"))
 checks.append(("forecasts re-anchored to", "0.685", "0.685" if "khoảng 0,685" in rec else "not found"))
 
+# ---------------------------------------------------------------- final audit, 8 October 2026 (stages 66 and 67)
+f1 = lambda tag: FT("FT_%s_train.json" % tag)[0]["final"]["macro_f1"]
+checks.append(("LoRA row of Table 6, from unrounded values", "+0.0060", r4(f1("g2_svfap_lora16") - f1("g1_svfap_full"))))
+checks.append(("schedule correction, macro-F1, from unrounded values", "+0.0080", r4(f1("g6_ep12_ema999") - f1("g3_svfap_locked_s0"))))
+lr = lambda tag: FT("FT_%s_train.json" % tag)[0]["args"]["lr"]
+checks.append(("learning rates: reference, LoRA row, 30-epoch row, locked", "0.0005 0.001 0.0005 0.001",
+               "%g %g %g %g" % (lr("g1_svfap_full"), lr("g2_svfap_lora16"), lr("g3_svfap_locked_s0"), lr("g6_ep12_ema999"))))
+s0 = lambda pat: [j["seconds"] for j in FT(pat)]
+checks.append(("fold-0 run times, 61-frame arm and CMS, third campaign", "3,102 to 3,112; 3,104 to 3,112",
+               "{:,.0f} to {:,.0f}; {:,.0f} to {:,.0f}".format(min(s0("FT_v3_R_f0_s?_train.json")), max(s0("FT_v3_R_f0_s?_train.json")),
+                                                              min(s0("FT_v3_C_f0_s?_train.json")), max(s0("FT_v3_C_f0_s?_train.json")))))
+CL = J("CLIP_LENGTHS_V3.json"); n10 = int(CL["percentiles"]["10"])
+base = list(range(0, n10, 20)); win = (base + [n10 - 1] * 16)[:16]
+checks.append(("10th-percentile clip: length, distinct frames, positions of the last", "167 10 7",
+               "%d %d %d" % (n10, len(set(win)), win.count(n10 - 1))))
+checks.append(("coverage of the 301-frame window on the longest clip", "91", "%d" % int(100 * 301 / CL["max"])))
+g8 = J("G8_OFFICIAL.json")
+used = sum(g8[s]["n"] for s in ("VAL_train_only", "TEST_train_only")) + FT("FT_g8_svfap_s0_train.json")[0].get("n_train", 0)
+checks.append(("clips the runs use, and the cache excess", "11,206 105", "{:,} {}".format(used, CL["n_clips"] - used)))
+PC = {r["backbone"]: r for r in J("PARAM_COUNTS.json")["counts"]}
+checks.append(("parameter counts, SVFAP-B total / trainable / adapters", "77,633,812 1,058,820 39",
+               "{:,} {:,} {}".format(PC["svfap"]["total"], PC["svfap"]["trainable_rank16"], PC["svfap"]["lora_modules"])))
+checks.append(("parameter counts, MAE-DFER-B total / trainable / adapters", "84,876,804 1,968,132 96",
+               "{:,} {:,} {}".format(PC["maedfer"]["total"], PC["maedfer"]["trainable_rank16"], PC["maedfer"]["lora_modules"])))
+
+CB = J("CLIP_BRANCH_SHARES.json")["shares_shorter_than_span"]
+checks.append(("short-branch shares at spans 61, 136, 280, 283, 286, 301 (face cache)", "0.4 4.0 12.1 12.1 12.4 87.2",
+               " ".join("%.1f" % (100 * CB[k]["cache"]) for k in ("inherited recipe, 16 at 4", "B, 16 at 9", "C, 32 at 9",
+                                                                  "D, 48 at 6", "A, 16 at 19", "CMS, 16 at 20"))))
+
 bad = 0
 for name, printed, got in checks:
     ok = printed.replace("-", "−") == got.replace("-", "−")

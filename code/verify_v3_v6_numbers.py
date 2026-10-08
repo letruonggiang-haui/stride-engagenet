@@ -64,7 +64,7 @@ checks = [
     ("calibration gain, k = 5", "+0.0063", r4(K["mean_diff_macro_f1_M1_M0"])),
     ("calibration folds with CI above 0", "0", str(K["folds_ci_lower_above_zero"])),
     ("calibration gain, k = 20", "+0.0119", r4(np.mean([K["folds"][f]["k_curve"]["20"]["M1"]["macro_f1"] - K["folds"][f]["k_curve"]["20"]["M0"]["macro_f1"] for f in "012"]))),
-    ("majority below uncalibrated", "0.19", "%.2f" % np.mean([K["folds"][f]["M0"]["macro_f1"] - K["folds"][f]["B1"]["macro_f1"] for f in "012"])),
+    ("majority below uncalibrated", "0.1873", "%.4f" % np.mean([K["folds"][f]["M0"]["macro_f1"] - K["folds"][f]["B1"]["macro_f1"] for f in "012"])),
     ("calibration accuracy gain", "+0.0060", r4(np.mean([K["folds"][f]["diff_acc_M1_M0"] for f in "012"]))),
 ]
 for k in ("1", "3", "10"):

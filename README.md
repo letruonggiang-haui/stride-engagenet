@@ -78,6 +78,12 @@ manuscript prints, by `code/verify_rev_b.py`:
   inline in the official queue; deposited byte for byte below a guard line, and rerun on a scratch copy it reproduces
   `G8_OFFICIAL.json` field for field.
 
+- `code/count_params.py` -> `results/PARAM_COUNTS.json`: total and trainable parameter counts of SVFAP-B and
+  MAE-DFER-B, one fresh process per backbone (in one process the two repositories' `modeling_finetune.py`
+  collide, which is why `ENV_AND_CI.json` records an error for MAE-DFER-B).
+- `code/clip_lengths.py` -> `results/CLIP_BRANCH_SHARES.json`: the share of clips shorter than each window span,
+  i.e. the share that takes the short-clip branch of the sampler, over the face cache and over the clips used.
+
 The environment block of `results/ENV_AND_CI.json` was read by a different interpreter (Python 3.11.16) from the one
 the runs used (Python 3.13.13, named in `logs/v3.log`, `v5.log` and `v6.log`), so it does not describe the runs;
 Article S1, Section B.2 gives the run interpreter's versions. The interval block of the same file is unaffected.
