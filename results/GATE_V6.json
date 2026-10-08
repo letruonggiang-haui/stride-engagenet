@@ -1,0 +1,107 @@
+{
+ "design": "MODEL_V6_DESIGN_2026-10-06, gate G-D6 (the G-D rule of v5 on new runs only)",
+ "design_sha256": "0b65307dc848ebe704000662c1081ebf9f8d74df1e0412a16d8788115899307c",
+ "threshold_mean_macro_f1": 0.015,
+ "min_folds_beyond_seed_range": 2,
+ "seeds": [
+  3,
+  4,
+  5
+ ],
+ "pretraining_seed": 1,
+ "selection_metric": "macro_f1 primary, uar secondary; accuracy never used to select",
+ "per_fold": {
+  "0": {
+   "P_macro_f1_seeds": [
+    0.5932603662456984,
+    0.6015769035174537,
+    0.6068181096470178
+   ],
+   "C_macro_f1_seeds": [
+    0.5900648153496102,
+    0.5877950121693525,
+    0.5809111717177328
+   ],
+   "P_mean": 0.6005517931367234,
+   "C_mean": 0.5862569997455651,
+   "P_seed_range": 0.013557743401319322,
+   "C_seed_range": 0.009153643631877428,
+   "diff_macro_f1": 0.014294793391158245,
+   "beyond_seed_range": true,
+   "diff_uar": 0.018473552390776415,
+   "diff_acc": 0.005718954248365993,
+   "same_seed_differences_macro_f1": [
+    0.0031955508960882506,
+    0.01378189134810126,
+    0.025906937929285
+   ]
+  },
+  "1": {
+   "P_macro_f1_seeds": [
+    0.5617580252168695,
+    0.5579570108876772,
+    0.5867116061445962
+   ],
+   "C_macro_f1_seeds": [
+    0.5709313415599033,
+    0.553181403004454,
+    0.5776986698121473
+   ],
+   "P_mean": 0.5688088807497143,
+   "C_mean": 0.5672704714588349,
+   "P_seed_range": 0.028754595256918924,
+   "C_seed_range": 0.024517266807693394,
+   "diff_macro_f1": 0.001538409290879339,
+   "beyond_seed_range": false,
+   "diff_uar": 0.003002752263415287,
+   "diff_acc": 0.009180243082492878,
+   "same_seed_differences_macro_f1": [
+    -0.009173316343033866,
+    0.004775607883223287,
+    0.009012936332448818
+   ]
+  },
+  "2": {
+   "P_macro_f1_seeds": [
+    0.6097548354619926,
+    0.5970935345088378,
+    0.6045990752906177
+   ],
+   "C_macro_f1_seeds": [
+    0.5982264502469307,
+    0.5777416835506246,
+    0.5830465827707227
+   ],
+   "P_mean": 0.6038158150871493,
+   "C_mean": 0.5863382388560927,
+   "P_seed_range": 0.012661300953154764,
+   "C_seed_range": 0.020484766696306056,
+   "diff_macro_f1": 0.017477576231056613,
+   "beyond_seed_range": false,
+   "diff_uar": 0.016507662169104154,
+   "diff_acc": 0.017642247926159538,
+   "same_seed_differences_macro_f1": [
+    0.011528385215061943,
+    0.019351850958213235,
+    0.021552492519894995
+   ]
+  }
+ },
+ "mean_diff_macro_f1": 0.011103592971031398,
+ "folds_beyond_seed_range": 1,
+ "mean_diff_uar": 0.012661322274431952,
+ "mean_diff_acc": 0.010847148419006136,
+ "condition_1": false,
+ "condition_2": false,
+ "condition_3": true,
+ "gate_pass": false,
+ "verdict": "FAIL: mean macro-F1 P - C +0.0111 (needs >= +0.015), 1/3 folds positive and beyond the seed range (needs >= 2), mean UAR P - C +0.0127 (needs >= 0)",
+ "pooled_v5_v6_not_used_for_the_decision": {
+  "diff_macro_f1_per_fold": [
+   0.011106558509351272,
+   0.013216384738342413,
+   0.016869103650907102
+  ],
+  "mean": 0.013730682299533595
+ }
+}

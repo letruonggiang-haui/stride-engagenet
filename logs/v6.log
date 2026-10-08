@@ -1,0 +1,866 @@
+[2026-10-06 03:07:51 UTC] === v6 queue (re)start; python 3.13.13 2.6.0+cu124
+[2026-10-06 03:07:51 UTC] design sha256 0b65307dc848ebe704000662c1081ebf9f8d74df1e0412a16d8788115899307c  pretrain_v5 cef6ff9b5cfad36d5a5c07339e6f4f8cb549a24d2782a215350c5c6bd02051d3  ft_video 65da774c4293bba4d6a097090e628901fee817d2fea9079c967638f8c0b09a30
+[2026-10-06 03:07:51 UTC] waiting for GPU memory: 5209 MiB free, need 11960
+[2026-10-06 10:47:54 UTC] GPU free: 22566 MiB
+[2026-10-06 10:47:54 UTC] start v6_pre_f0
+engagenet pretraining clips 5431 from 60 subjects (inner fold 0 held out); labels are not used
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+released checkpoint: <All keys matched successfully>
+pre ep 0 loss 0.5715 lr 5.00e-05 57s
+ckpt saved epoch 0 peak_mem_gb 7.14
+pre ep 1 loss 0.5338 lr 1.00e-04 112s
+ckpt saved epoch 1 peak_mem_gb 7.14
+pre ep 2 loss 0.5243 lr 9.97e-05 167s
+ckpt saved epoch 2 peak_mem_gb 7.14
+pre ep 3 loss 0.5078 lr 9.88e-05 223s
+ckpt saved epoch 3 peak_mem_gb 7.14
+pre ep 4 loss 0.4964 lr 9.72e-05 278s
+ckpt saved epoch 4 peak_mem_gb 7.14
+pre ep 5 loss 0.4861 lr 9.51e-05 332s
+ckpt saved epoch 5 peak_mem_gb 7.14
+pre ep 6 loss 0.4763 lr 9.24e-05 387s
+ckpt saved epoch 6 peak_mem_gb 7.14
+pre ep 7 loss 0.4710 lr 8.92e-05 442s
+ckpt saved epoch 7 peak_mem_gb 7.14
+pre ep 8 loss 0.4624 lr 8.55e-05 496s
+ckpt saved epoch 8 peak_mem_gb 7.14
+pre ep 9 loss 0.4549 lr 8.14e-05 551s
+ckpt saved epoch 9 peak_mem_gb 7.14
+pre ep 10 loss 0.4499 lr 7.68e-05 606s
+ckpt saved epoch 10 peak_mem_gb 7.14
+pre ep 11 loss 0.4434 lr 7.20e-05 660s
+ckpt saved epoch 11 peak_mem_gb 7.14
+pre ep 12 loss 0.4366 lr 6.68e-05 715s
+ckpt saved epoch 12 peak_mem_gb 7.14
+pre ep 13 loss 0.4317 lr 6.15e-05 769s
+ckpt saved epoch 13 peak_mem_gb 7.14
+pre ep 14 loss 0.4262 lr 5.60e-05 823s
+ckpt saved epoch 14 peak_mem_gb 7.14
+pre ep 15 loss 0.4211 lr 5.05e-05 877s
+ckpt saved epoch 15 peak_mem_gb 7.14
+pre ep 16 loss 0.4167 lr 4.50e-05 931s
+ckpt saved epoch 16 peak_mem_gb 7.14
+pre ep 17 loss 0.4118 lr 3.95e-05 986s
+ckpt saved epoch 17 peak_mem_gb 7.14
+pre ep 18 loss 0.4078 lr 3.42e-05 1041s
+ckpt saved epoch 18 peak_mem_gb 7.14
+pre ep 19 loss 0.4021 lr 2.90e-05 1096s
+ckpt saved epoch 19 peak_mem_gb 7.14
+pre ep 20 loss 0.3990 lr 2.42e-05 1150s
+ckpt saved epoch 20 peak_mem_gb 7.14
+pre ep 21 loss 0.3964 lr 1.96e-05 1206s
+ckpt saved epoch 21 peak_mem_gb 7.14
+pre ep 22 loss 0.3927 lr 1.55e-05 1261s
+ckpt saved epoch 22 peak_mem_gb 7.14
+pre ep 23 loss 0.3902 lr 1.18e-05 1316s
+ckpt saved epoch 23 peak_mem_gb 7.14
+pre ep 24 loss 0.3884 lr 8.59e-06 1372s
+ckpt saved epoch 24 peak_mem_gb 7.14
+pre ep 25 loss 0.3868 lr 5.90e-06 1427s
+ckpt saved epoch 25 peak_mem_gb 7.14
+pre ep 26 loss 0.3859 lr 3.78e-06 1482s
+ckpt saved epoch 26 peak_mem_gb 7.14
+pre ep 27 loss 0.3842 lr 2.24e-06 1537s
+ckpt saved epoch 27 peak_mem_gb 7.14
+pre ep 28 loss 0.3828 lr 1.31e-06 1592s
+ckpt saved epoch 28 peak_mem_gb 7.14
+pre ep 29 loss 0.3826 lr 1.00e-06 1648s
+ckpt saved epoch 29 peak_mem_gb 7.14
+PRE_DONE v6_pre_f0 $HOME/engagenet_p2_crossdomain/weights/svfap_v5/v6_pre_f0.pth
+[2026-10-06 11:16:30 UTC] EXIT v6_pre_f0 0
+[2026-10-06 11:16:31 UTC] start v6_C_f0_s3
+engagenet K=4 train 5431 clips/60 subjects, eval 2448/31 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.172 acc 0.6360 uar 0.4652 f1 0.4191 [358, 0, 539, 1551] 251s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.897 acc 0.7022 uar 0.5622 f1 0.5405 [308, 59, 468, 1613] 499s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.832 acc 0.6973 uar 0.5581 f1 0.5443 [282, 86, 499, 1581] 748s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.800 acc 0.7018 uar 0.5642 f1 0.5630 [250, 105, 508, 1585] 997s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.783 acc 0.6989 uar 0.5591 f1 0.5661 [228, 119, 512, 1589] 1246s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.761 acc 0.7010 uar 0.5587 f1 0.5719 [211, 132, 510, 1595] 1495s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.731 acc 0.7026 uar 0.5633 f1 0.5800 [203, 142, 514, 1589] 1744s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.708 acc 0.7047 uar 0.5651 f1 0.5830 [196, 155, 523, 1574] 1993s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.689 acc 0.7067 uar 0.5741 f1 0.5917 [198, 164, 534, 1552] 2242s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.668 acc 0.7055 uar 0.5759 f1 0.5928 [197, 169, 552, 1530] 2491s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.658 acc 0.7047 uar 0.5792 f1 0.5946 [197, 176, 571, 1504] 2740s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.650 acc 0.6998 uar 0.5758 f1 0.5901 [195, 190, 584, 1479] 2990s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6638 uar 0.5889 f1 0.5914
+majority baseline on this eval set: 0.5792 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f0_s3_train {"epoch": 11, "loss": 0.6498407365474026, "acc": 0.6997549019607843, "uar": 0.5758235278894218, "macro_f1": 0.5900648153496102, "pred_dist": [195, 190, 584, 1479]}
+[2026-10-06 12:09:24 UTC] EXIT v6_C_f0_s3 0
+[2026-10-06 12:09:24 UTC] start v6_P_f0_s3
+engagenet K=4 train 5431 clips/60 subjects, eval 2448/31 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.122 acc 0.6368 uar 0.5026 f1 0.4474 [421, 33, 554, 1440] 251s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.867 acc 0.7075 uar 0.5367 f1 0.5304 [235, 45, 463, 1705] 499s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.812 acc 0.7108 uar 0.5516 f1 0.5485 [241, 72, 469, 1666] 748s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.788 acc 0.7108 uar 0.5610 f1 0.5621 [234, 88, 500, 1626] 998s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.766 acc 0.7096 uar 0.5657 f1 0.5674 [234, 96, 524, 1594] 1247s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.740 acc 0.7067 uar 0.5667 f1 0.5704 [229, 112, 535, 1572] 1496s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.717 acc 0.7042 uar 0.5696 f1 0.5770 [220, 130, 554, 1544] 1745s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.692 acc 0.7022 uar 0.5725 f1 0.5811 [216, 146, 570, 1516] 1994s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.672 acc 0.6961 uar 0.5706 f1 0.5797 [212, 161, 585, 1490] 2243s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.654 acc 0.7002 uar 0.5784 f1 0.5886 [210, 173, 588, 1477] 2494s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.642 acc 0.7018 uar 0.5850 f1 0.5948 [211, 181, 598, 1458] 2744s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.635 acc 0.6965 uar 0.5842 f1 0.5933 [211, 190, 615, 1432] 2993s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6520 uar 0.5828 f1 0.5770
+majority baseline on this eval set: 0.5792 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f0_s3_train {"epoch": 11, "loss": 0.635184370574698, "acc": 0.6964869281045751, "uar": 0.5841930635122645, "macro_f1": 0.5932603662456984, "pred_dist": [211, 190, 615, 1432]}
+[2026-10-06 13:02:21 UTC] EXIT v6_P_f0_s3 0
+[2026-10-06 13:02:21 UTC] start v6_C_f0_s4
+engagenet K=4 train 5431 clips/60 subjects, eval 2448/31 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.164 acc 0.5833 uar 0.4672 f1 0.3979 [485, 0, 691, 1272] 251s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.899 acc 0.6532 uar 0.5290 f1 0.5080 [326, 155, 480, 1487] 499s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.841 acc 0.6597 uar 0.5323 f1 0.5221 [280, 153, 519, 1496] 747s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.815 acc 0.6654 uar 0.5379 f1 0.5357 [247, 154, 552, 1495] 996s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.780 acc 0.6716 uar 0.5383 f1 0.5459 [211, 158, 581, 1498] 1245s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.753 acc 0.6744 uar 0.5390 f1 0.5502 [201, 155, 581, 1511] 1495s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.732 acc 0.6826 uar 0.5486 f1 0.5644 [191, 159, 581, 1517] 1745s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.715 acc 0.6883 uar 0.5526 f1 0.5697 [189, 165, 565, 1529] 1995s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.693 acc 0.6920 uar 0.5597 f1 0.5754 [194, 167, 565, 1522] 2245s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.671 acc 0.6949 uar 0.5675 f1 0.5850 [191, 178, 566, 1513] 2495s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.659 acc 0.6944 uar 0.5692 f1 0.5865 [191, 186, 566, 1505] 2744s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.647 acc 0.6940 uar 0.5723 f1 0.5878 [192, 194, 582, 1480] 2993s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6650 uar 0.5850 f1 0.5863
+majority baseline on this eval set: 0.5792 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f0_s4_train {"epoch": 11, "loss": 0.6473690663467114, "acc": 0.6940359477124183, "uar": 0.5723331786303165, "macro_f1": 0.5877950121693525, "pred_dist": [192, 194, 582, 1480]}
+[2026-10-06 13:55:16 UTC] EXIT v6_C_f0_s4 0
+[2026-10-06 13:55:16 UTC] start v6_P_f0_s4
+engagenet K=4 train 5431 clips/60 subjects, eval 2448/31 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.123 acc 0.6152 uar 0.5067 f1 0.4351 [433, 3, 720, 1292] 250s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.864 acc 0.6450 uar 0.5560 f1 0.5125 [394, 150, 555, 1349] 498s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.821 acc 0.6601 uar 0.5637 f1 0.5332 [341, 150, 575, 1382] 748s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.796 acc 0.6658 uar 0.5624 f1 0.5432 [299, 160, 587, 1402] 996s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.765 acc 0.6765 uar 0.5675 f1 0.5581 [269, 160, 588, 1431] 1244s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.733 acc 0.6867 uar 0.5734 f1 0.5710 [248, 164, 584, 1452] 1493s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.716 acc 0.6932 uar 0.5765 f1 0.5781 [235, 155, 596, 1462] 1742s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.704 acc 0.6981 uar 0.5765 f1 0.5835 [217, 162, 601, 1468] 1990s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.678 acc 0.7018 uar 0.5805 f1 0.5895 [210, 162, 610, 1466] 2241s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.653 acc 0.7034 uar 0.5856 f1 0.5981 [201, 176, 613, 1458] 2490s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.638 acc 0.7042 uar 0.5886 f1 0.6010 [198, 184, 623, 1443] 2739s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.632 acc 0.7030 uar 0.5906 f1 0.6016 [201, 190, 632, 1425] 2988s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6511 uar 0.5837 f1 0.5758
+majority baseline on this eval set: 0.5792 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f0_s4_train {"epoch": 11, "loss": 0.6316637222745777, "acc": 0.7030228758169934, "uar": 0.5906186098843553, "macro_f1": 0.6015769035174537, "pred_dist": [201, 190, 632, 1425]}
+[2026-10-06 14:48:08 UTC] EXIT v6_P_f0_s4 0
+[2026-10-06 14:48:08 UTC] start v6_C_f0_s5
+engagenet K=4 train 5431 clips/60 subjects, eval 2448/31 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.168 acc 0.6462 uar 0.4136 f1 0.3811 [288, 0, 230, 1930] 251s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.900 acc 0.6601 uar 0.5173 f1 0.5425 [122, 313, 514, 1499] 500s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.841 acc 0.6691 uar 0.5251 f1 0.5537 [130, 248, 564, 1506] 749s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.804 acc 0.6736 uar 0.5262 f1 0.5551 [138, 207, 584, 1519] 997s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.778 acc 0.6785 uar 0.5284 f1 0.5567 [142, 192, 581, 1533] 1247s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.757 acc 0.6826 uar 0.5349 f1 0.5634 [144, 185, 589, 1530] 1497s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.737 acc 0.6838 uar 0.5364 f1 0.5621 [152, 180, 590, 1526] 1746s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.717 acc 0.6867 uar 0.5440 f1 0.5692 [155, 197, 578, 1518] 1995s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.684 acc 0.6904 uar 0.5515 f1 0.5760 [159, 198, 579, 1512] 2245s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.667 acc 0.6908 uar 0.5512 f1 0.5744 [160, 198, 585, 1505] 2494s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.652 acc 0.6944 uar 0.5572 f1 0.5799 [162, 206, 577, 1503] 2744s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.647 acc 0.6949 uar 0.5605 f1 0.5809 [168, 216, 575, 1489] 2994s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6793 uar 0.5818 f1 0.5838
+majority baseline on this eval set: 0.5792 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f0_s5_train {"epoch": 11, "loss": 0.6469030316952056, "acc": 0.6948529411764706, "uar": 0.5604792784756438, "macro_f1": 0.5809111717177328, "pred_dist": [168, 216, 575, 1489]}
+[2026-10-06 15:41:04 UTC] EXIT v6_C_f0_s5 0
+[2026-10-06 15:41:04 UTC] start v6_P_f0_s5
+engagenet K=4 train 5431 clips/60 subjects, eval 2448/31 (cv fold 0)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.126 acc 0.6254 uar 0.4966 f1 0.4294 [444, 2, 598, 1404] 251s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.856 acc 0.6230 uar 0.5152 f1 0.4800 [314, 476, 233, 1425] 500s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.817 acc 0.6471 uar 0.5400 f1 0.5197 [286, 394, 318, 1450] 749s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.792 acc 0.6671 uar 0.5549 f1 0.5504 [249, 323, 391, 1485] 998s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.767 acc 0.6810 uar 0.5607 f1 0.5645 [234, 258, 452, 1504] 1247s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.739 acc 0.6867 uar 0.5617 f1 0.5701 [222, 220, 496, 1510] 1497s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.725 acc 0.6981 uar 0.5758 f1 0.5889 [211, 199, 530, 1508] 1747s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.698 acc 0.6989 uar 0.5776 f1 0.5941 [201, 191, 553, 1503] 1997s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.674 acc 0.7010 uar 0.5785 f1 0.5968 [193, 190, 567, 1498] 2247s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.650 acc 0.7030 uar 0.5839 f1 0.6031 [191, 191, 576, 1490] 2497s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.634 acc 0.7059 uar 0.5880 f1 0.6069 [189, 197, 584, 1478] 2748s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.631 acc 0.7063 uar 0.5892 f1 0.6068 [190, 199, 592, 1467] 2997s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6822 uar 0.5925 f1 0.5928
+majority baseline on this eval set: 0.5792 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f0_s5_train {"epoch": 11, "loss": 0.6311071264532815, "acc": 0.7062908496732027, "uar": 0.5892449687710914, "macro_f1": 0.6068181096470178, "pred_dist": [190, 199, 592, 1467]}
+[2026-10-06 16:34:04 UTC] EXIT v6_P_f0_s5 0
+[2026-10-06 16:34:04 UTC] start v6_pre_f1
+engagenet pretraining clips 5301 from 61 subjects (inner fold 1 held out); labels are not used
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+released checkpoint: <All keys matched successfully>
+pre ep 0 loss 0.5742 lr 5.00e-05 54s
+ckpt saved epoch 0 peak_mem_gb 7.14
+pre ep 1 loss 0.5321 lr 1.00e-04 107s
+ckpt saved epoch 1 peak_mem_gb 7.14
+pre ep 2 loss 0.5240 lr 9.97e-05 161s
+ckpt saved epoch 2 peak_mem_gb 7.14
+pre ep 3 loss 0.5047 lr 9.88e-05 216s
+ckpt saved epoch 3 peak_mem_gb 7.14
+pre ep 4 loss 0.4939 lr 9.72e-05 270s
+ckpt saved epoch 4 peak_mem_gb 7.14
+pre ep 5 loss 0.4791 lr 9.51e-05 324s
+ckpt saved epoch 5 peak_mem_gb 7.14
+pre ep 6 loss 0.4725 lr 9.24e-05 378s
+ckpt saved epoch 6 peak_mem_gb 7.14
+pre ep 7 loss 0.4638 lr 8.92e-05 431s
+ckpt saved epoch 7 peak_mem_gb 7.14
+pre ep 8 loss 0.4571 lr 8.55e-05 485s
+ckpt saved epoch 8 peak_mem_gb 7.14
+pre ep 9 loss 0.4491 lr 8.14e-05 539s
+ckpt saved epoch 9 peak_mem_gb 7.14
+pre ep 10 loss 0.4430 lr 7.68e-05 594s
+ckpt saved epoch 10 peak_mem_gb 7.14
+pre ep 11 loss 0.4385 lr 7.20e-05 647s
+ckpt saved epoch 11 peak_mem_gb 7.14
+pre ep 12 loss 0.4342 lr 6.68e-05 699s
+ckpt saved epoch 12 peak_mem_gb 7.14
+pre ep 13 loss 0.4267 lr 6.15e-05 752s
+ckpt saved epoch 13 peak_mem_gb 7.14
+pre ep 14 loss 0.4200 lr 5.60e-05 806s
+ckpt saved epoch 14 peak_mem_gb 7.14
+pre ep 15 loss 0.4147 lr 5.05e-05 860s
+ckpt saved epoch 15 peak_mem_gb 7.14
+pre ep 16 loss 0.4098 lr 4.50e-05 913s
+ckpt saved epoch 16 peak_mem_gb 7.14
+pre ep 17 loss 0.4053 lr 3.95e-05 966s
+ckpt saved epoch 17 peak_mem_gb 7.14
+pre ep 18 loss 0.4010 lr 3.42e-05 1019s
+ckpt saved epoch 18 peak_mem_gb 7.14
+pre ep 19 loss 0.3967 lr 2.90e-05 1073s
+ckpt saved epoch 19 peak_mem_gb 7.14
+pre ep 20 loss 0.3928 lr 2.42e-05 1126s
+ckpt saved epoch 20 peak_mem_gb 7.14
+pre ep 21 loss 0.3893 lr 1.96e-05 1180s
+ckpt saved epoch 21 peak_mem_gb 7.14
+pre ep 22 loss 0.3860 lr 1.55e-05 1233s
+ckpt saved epoch 22 peak_mem_gb 7.14
+pre ep 23 loss 0.3837 lr 1.18e-05 1286s
+ckpt saved epoch 23 peak_mem_gb 7.14
+pre ep 24 loss 0.3808 lr 8.59e-06 1339s
+ckpt saved epoch 24 peak_mem_gb 7.14
+pre ep 25 loss 0.3797 lr 5.90e-06 1392s
+ckpt saved epoch 25 peak_mem_gb 7.14
+pre ep 26 loss 0.3764 lr 3.78e-06 1446s
+ckpt saved epoch 26 peak_mem_gb 7.14
+pre ep 27 loss 0.3766 lr 2.24e-06 1500s
+ckpt saved epoch 27 peak_mem_gb 7.14
+pre ep 28 loss 0.3761 lr 1.31e-06 1553s
+ckpt saved epoch 28 peak_mem_gb 7.14
+pre ep 29 loss 0.3756 lr 1.00e-06 1607s
+ckpt saved epoch 29 peak_mem_gb 7.14
+PRE_DONE v6_pre_f1 $HOME/engagenet_p2_crossdomain/weights/svfap_v5/v6_pre_f1.pth
+[2026-10-06 17:02:01 UTC] EXIT v6_pre_f1 0
+[2026-10-06 17:02:01 UTC] start v6_C_f1_s3
+engagenet K=4 train 5301 clips/61 subjects, eval 2578/30 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.140 acc 0.5291 uar 0.3843 f1 0.3572 [340, 0, 573, 1665] 252s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.876 acc 0.6210 uar 0.5026 f1 0.4809 [548, 64, 410, 1556] 504s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.814 acc 0.6257 uar 0.5062 f1 0.4915 [511, 71, 422, 1574] 755s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.784 acc 0.6265 uar 0.5063 f1 0.4972 [468, 79, 443, 1588] 1007s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.761 acc 0.6261 uar 0.5065 f1 0.5034 [434, 92, 457, 1595] 1260s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.747 acc 0.6261 uar 0.5081 f1 0.5089 [416, 106, 461, 1595] 1512s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.714 acc 0.6276 uar 0.5124 f1 0.5172 [400, 118, 480, 1580] 1764s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.693 acc 0.6369 uar 0.5260 f1 0.5368 [383, 141, 481, 1573] 2016s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.675 acc 0.6408 uar 0.5329 f1 0.5464 [374, 160, 486, 1558] 2269s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.651 acc 0.6451 uar 0.5424 f1 0.5582 [373, 181, 480, 1544] 2521s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.639 acc 0.6486 uar 0.5496 f1 0.5664 [371, 202, 474, 1531] 2774s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.636 acc 0.6493 uar 0.5539 f1 0.5709 [369, 222, 473, 1514] 3026s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6458 uar 0.5665 f1 0.5781
+majority baseline on this eval set: 0.4391 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f1_s3_train {"epoch": 11, "loss": 0.6356767322361649, "acc": 0.6493405740884407, "uar": 0.5538880292727264, "macro_f1": 0.5709313415599033, "pred_dist": [369, 222, 473, 1514]}
+[2026-10-06 17:55:35 UTC] EXIT v6_C_f1_s3 0
+[2026-10-06 17:55:35 UTC] start v6_P_f1_s3
+engagenet K=4 train 5301 clips/61 subjects, eval 2578/30 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.107 acc 0.5388 uar 0.4152 f1 0.4017 [386, 83, 652, 1457] 253s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.829 acc 0.6175 uar 0.5017 f1 0.4846 [548, 127, 352, 1551] 505s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.788 acc 0.6218 uar 0.5079 f1 0.4967 [516, 134, 379, 1549] 756s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.761 acc 0.6265 uar 0.5117 f1 0.5042 [491, 126, 397, 1564] 1008s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.743 acc 0.6323 uar 0.5185 f1 0.5157 [468, 130, 410, 1570] 1260s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.724 acc 0.6346 uar 0.5207 f1 0.5213 [441, 142, 411, 1584] 1511s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.698 acc 0.6404 uar 0.5286 f1 0.5333 [422, 152, 428, 1576] 1763s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.680 acc 0.6412 uar 0.5302 f1 0.5366 [412, 162, 436, 1568] 2015s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.655 acc 0.6451 uar 0.5369 f1 0.5471 [395, 176, 448, 1559] 2267s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.636 acc 0.6482 uar 0.5411 f1 0.5513 [398, 181, 453, 1546] 2520s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.626 acc 0.6490 uar 0.5453 f1 0.5566 [399, 189, 456, 1534] 2772s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.612 acc 0.6509 uar 0.5500 f1 0.5618 [401, 197, 469, 1511] 3024s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6691 uar 0.5932 f1 0.6057
+majority baseline on this eval set: 0.4391 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f1_s3_train {"epoch": 11, "loss": 0.6119688041620744, "acc": 0.6508921644685803, "uar": 0.549973478776464, "macro_f1": 0.5617580252168695, "pred_dist": [401, 197, 469, 1511]}
+[2026-10-06 18:49:07 UTC] EXIT v6_P_f1_s3 0
+[2026-10-06 18:49:07 UTC] start v6_C_f1_s4
+engagenet K=4 train 5301 clips/61 subjects, eval 2578/30 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.157 acc 0.5217 uar 0.4179 f1 0.3769 [761, 3, 549, 1265] 252s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.877 acc 0.5663 uar 0.4697 f1 0.4727 [364, 183, 751, 1280] 503s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.826 acc 0.5791 uar 0.4784 f1 0.4815 [370, 161, 700, 1347] 755s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.786 acc 0.5849 uar 0.4820 f1 0.4874 [362, 147, 661, 1408] 1007s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.755 acc 0.5946 uar 0.4883 f1 0.4976 [338, 151, 641, 1448] 1258s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.738 acc 0.6094 uar 0.5020 f1 0.5142 [338, 151, 598, 1491] 1509s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.710 acc 0.6125 uar 0.5042 f1 0.5179 [328, 151, 594, 1505] 1762s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.696 acc 0.6175 uar 0.5097 f1 0.5256 [319, 155, 597, 1507] 2013s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.668 acc 0.6191 uar 0.5113 f1 0.5276 [318, 165, 580, 1515] 2265s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.654 acc 0.6253 uar 0.5209 f1 0.5397 [313, 182, 572, 1511] 2517s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.643 acc 0.6303 uar 0.5305 f1 0.5515 [310, 204, 561, 1503] 2769s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.636 acc 0.6315 uar 0.5331 f1 0.5532 [315, 218, 546, 1499] 3021s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6435 uar 0.5677 f1 0.5793
+majority baseline on this eval set: 0.4391 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f1_s4_train {"epoch": 11, "loss": 0.6359492230631434, "acc": 0.6314972847168348, "uar": 0.5330625841127579, "macro_f1": 0.553181403004454, "pred_dist": [315, 218, 546, 1499]}
+[2026-10-06 19:42:37 UTC] EXIT v6_C_f1_s4 0
+[2026-10-06 19:42:37 UTC] start v6_P_f1_s4
+engagenet K=4 train 5301 clips/61 subjects, eval 2578/30 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.117 acc 0.5535 uar 0.4511 f1 0.4075 [754, 62, 472, 1290] 254s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.832 acc 0.5970 uar 0.4641 f1 0.4685 [276, 87, 559, 1656] 505s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.796 acc 0.6032 uar 0.4736 f1 0.4790 [292, 99, 559, 1628] 756s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.766 acc 0.6078 uar 0.4792 f1 0.4853 [299, 108, 545, 1626] 1007s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.736 acc 0.6094 uar 0.4817 f1 0.4889 [302, 113, 536, 1627] 1259s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.719 acc 0.6125 uar 0.4859 f1 0.4936 [309, 122, 520, 1627] 1511s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.699 acc 0.6183 uar 0.4941 f1 0.5029 [315, 125, 522, 1616] 1763s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.679 acc 0.6230 uar 0.5006 f1 0.5119 [312, 131, 521, 1614] 2015s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.651 acc 0.6296 uar 0.5105 f1 0.5248 [312, 149, 510, 1607] 2266s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.641 acc 0.6365 uar 0.5216 f1 0.5382 [316, 167, 505, 1590] 2518s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.624 acc 0.6420 uar 0.5313 f1 0.5496 [317, 189, 505, 1567] 2771s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.616 acc 0.6458 uar 0.5389 f1 0.5580 [319, 202, 514, 1543] 3023s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6602 uar 0.5824 f1 0.5971
+majority baseline on this eval set: 0.4391 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f1_s4_train {"epoch": 11, "loss": 0.6161018139105909, "acc": 0.6458494957331264, "uar": 0.5389336829475093, "macro_f1": 0.5579570108876772, "pred_dist": [319, 202, 514, 1543]}
+[2026-10-06 20:36:08 UTC] EXIT v6_P_f1_s4 0
+[2026-10-06 20:36:09 UTC] start v6_C_f1_s5
+engagenet K=4 train 5301 clips/61 subjects, eval 2578/30 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.137 acc 0.5450 uar 0.4081 f1 0.3648 [594, 0, 355, 1629] 253s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.887 acc 0.5663 uar 0.4871 f1 0.4955 [354, 336, 718, 1170] 503s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.818 acc 0.5853 uar 0.4954 f1 0.5050 [352, 286, 676, 1264] 753s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.783 acc 0.5997 uar 0.5033 f1 0.5134 [353, 242, 650, 1333] 1003s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.768 acc 0.6098 uar 0.5090 f1 0.5173 [376, 215, 605, 1382] 1254s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.738 acc 0.6152 uar 0.5125 f1 0.5219 [371, 213, 578, 1416] 1504s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.712 acc 0.6226 uar 0.5238 f1 0.5372 [355, 222, 564, 1437] 1757s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.689 acc 0.6284 uar 0.5322 f1 0.5478 [344, 241, 539, 1454] 2008s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.674 acc 0.6350 uar 0.5418 f1 0.5584 [342, 253, 522, 1461] 2261s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.656 acc 0.6400 uar 0.5488 f1 0.5662 [340, 260, 514, 1464] 2513s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.638 acc 0.6443 uar 0.5561 f1 0.5739 [340, 272, 511, 1455] 2765s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.631 acc 0.6455 uar 0.5608 f1 0.5777 [348, 283, 502, 1445] 3016s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6439 uar 0.5736 f1 0.5824
+majority baseline on this eval set: 0.4391 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f1_s5_train {"epoch": 11, "loss": 0.6308997606582872, "acc": 0.6454615981380916, "uar": 0.5607876118617948, "macro_f1": 0.5776986698121473, "pred_dist": [348, 283, 502, 1445]}
+[2026-10-06 21:29:33 UTC] EXIT v6_C_f1_s5 0
+[2026-10-06 21:29:33 UTC] start v6_P_f1_s5
+engagenet K=4 train 5301 clips/61 subjects, eval 2578/30 (cv fold 1)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.100 acc 0.5621 uar 0.4171 f1 0.3871 [395, 3, 392, 1788] 253s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.840 acc 0.5365 uar 0.4809 f1 0.4768 [538, 418, 607, 1015] 503s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.800 acc 0.5679 uar 0.4937 f1 0.4939 [481, 347, 602, 1148] 754s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.765 acc 0.5978 uar 0.5138 f1 0.5182 [431, 280, 620, 1247] 1004s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.745 acc 0.6125 uar 0.5240 f1 0.5314 [403, 264, 606, 1305] 1255s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.724 acc 0.6218 uar 0.5296 f1 0.5396 [383, 253, 581, 1361] 1505s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.698 acc 0.6404 uar 0.5460 f1 0.5601 [364, 228, 572, 1414] 1757s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.675 acc 0.6490 uar 0.5546 f1 0.5721 [343, 230, 572, 1433] 2008s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.659 acc 0.6524 uar 0.5591 f1 0.5774 [342, 235, 557, 1444] 2260s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.640 acc 0.6555 uar 0.5644 f1 0.5838 [342, 239, 543, 1454] 2512s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.622 acc 0.6567 uar 0.5661 f1 0.5858 [338, 246, 540, 1454] 2764s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.614 acc 0.6571 uar 0.5678 f1 0.5867 [347, 252, 528, 1451] 3016s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6695 uar 0.5954 f1 0.6070
+majority baseline on this eval set: 0.4391 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f1_s5_train {"epoch": 11, "loss": 0.6135401722167554, "acc": 0.6570985259891389, "uar": 0.5678393203135517, "macro_f1": 0.5867116061445962, "pred_dist": [347, 252, 528, 1451]}
+[2026-10-06 22:22:59 UTC] EXIT v6_P_f1_s5 0
+[2026-10-06 22:22:59 UTC] start v6_pre_f2
+engagenet pretraining clips 5026 from 61 subjects (inner fold 2 held out); labels are not used
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+released checkpoint: <All keys matched successfully>
+pre ep 0 loss 0.5859 lr 5.00e-05 53s
+ckpt saved epoch 0 peak_mem_gb 7.13
+pre ep 1 loss 0.5419 lr 1.00e-04 105s
+ckpt saved epoch 1 peak_mem_gb 7.13
+pre ep 2 loss 0.5317 lr 9.97e-05 156s
+ckpt saved epoch 2 peak_mem_gb 7.13
+pre ep 3 loss 0.5139 lr 9.88e-05 208s
+ckpt saved epoch 3 peak_mem_gb 7.13
+pre ep 4 loss 0.5015 lr 9.72e-05 259s
+ckpt saved epoch 4 peak_mem_gb 7.13
+pre ep 5 loss 0.4901 lr 9.51e-05 311s
+ckpt saved epoch 5 peak_mem_gb 7.13
+pre ep 6 loss 0.4815 lr 9.24e-05 363s
+ckpt saved epoch 6 peak_mem_gb 7.13
+pre ep 7 loss 0.4737 lr 8.92e-05 415s
+ckpt saved epoch 7 peak_mem_gb 7.13
+pre ep 8 loss 0.4650 lr 8.55e-05 466s
+ckpt saved epoch 8 peak_mem_gb 7.13
+pre ep 9 loss 0.4588 lr 8.14e-05 517s
+ckpt saved epoch 9 peak_mem_gb 7.13
+pre ep 10 loss 0.4541 lr 7.68e-05 568s
+ckpt saved epoch 10 peak_mem_gb 7.13
+pre ep 11 loss 0.4455 lr 7.20e-05 619s
+ckpt saved epoch 11 peak_mem_gb 7.13
+pre ep 12 loss 0.4409 lr 6.68e-05 670s
+ckpt saved epoch 12 peak_mem_gb 7.13
+pre ep 13 loss 0.4361 lr 6.15e-05 720s
+ckpt saved epoch 13 peak_mem_gb 7.13
+pre ep 14 loss 0.4291 lr 5.60e-05 772s
+ckpt saved epoch 14 peak_mem_gb 7.13
+pre ep 15 loss 0.4233 lr 5.05e-05 824s
+ckpt saved epoch 15 peak_mem_gb 7.13
+pre ep 16 loss 0.4205 lr 4.50e-05 876s
+ckpt saved epoch 16 peak_mem_gb 7.13
+pre ep 17 loss 0.4144 lr 3.95e-05 926s
+ckpt saved epoch 17 peak_mem_gb 7.13
+pre ep 18 loss 0.4106 lr 3.42e-05 976s
+ckpt saved epoch 18 peak_mem_gb 7.13
+pre ep 19 loss 0.4048 lr 2.90e-05 1027s
+ckpt saved epoch 19 peak_mem_gb 7.13
+pre ep 20 loss 0.4000 lr 2.42e-05 1079s
+ckpt saved epoch 20 peak_mem_gb 7.13
+pre ep 21 loss 0.3992 lr 1.96e-05 1130s
+ckpt saved epoch 21 peak_mem_gb 7.13
+pre ep 22 loss 0.3950 lr 1.55e-05 1182s
+ckpt saved epoch 22 peak_mem_gb 7.13
+pre ep 23 loss 0.3928 lr 1.18e-05 1233s
+ckpt saved epoch 23 peak_mem_gb 7.13
+pre ep 24 loss 0.3906 lr 8.59e-06 1284s
+ckpt saved epoch 24 peak_mem_gb 7.13
+pre ep 25 loss 0.3869 lr 5.90e-06 1335s
+ckpt saved epoch 25 peak_mem_gb 7.13
+pre ep 26 loss 0.3878 lr 3.78e-06 1385s
+ckpt saved epoch 26 peak_mem_gb 7.13
+pre ep 27 loss 0.3847 lr 2.24e-06 1437s
+ckpt saved epoch 27 peak_mem_gb 7.13
+pre ep 28 loss 0.3843 lr 1.31e-06 1487s
+ckpt saved epoch 28 peak_mem_gb 7.13
+pre ep 29 loss 0.3847 lr 1.00e-06 1539s
+ckpt saved epoch 29 peak_mem_gb 7.13
+PRE_DONE v6_pre_f2 $HOME/engagenet_p2_crossdomain/weights/svfap_v5/v6_pre_f2.pth
+[2026-10-06 22:49:46 UTC] EXIT v6_pre_f2 0
+[2026-10-06 22:49:46 UTC] start v6_C_f2_s3
+engagenet K=4 train 5026 clips/61 subjects, eval 2853/30 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.167 acc 0.6134 uar 0.4683 f1 0.4390 [714, 0, 486, 1653] 258s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.925 acc 0.6505 uar 0.5434 f1 0.5502 [574, 246, 579, 1454] 516s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.866 acc 0.6474 uar 0.5396 f1 0.5474 [528, 258, 594, 1473] 774s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.820 acc 0.6439 uar 0.5395 f1 0.5494 [489, 275, 593, 1496] 1031s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.794 acc 0.6453 uar 0.5435 f1 0.5546 [465, 291, 591, 1506] 1288s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.762 acc 0.6477 uar 0.5490 f1 0.5606 [460, 302, 594, 1497] 1546s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.744 acc 0.6491 uar 0.5515 f1 0.5636 [461, 298, 595, 1499] 1804s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.724 acc 0.6509 uar 0.5541 f1 0.5665 [465, 304, 588, 1496] 2061s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.707 acc 0.6562 uar 0.5621 f1 0.5748 [466, 312, 591, 1484] 2320s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.682 acc 0.6639 uar 0.5720 f1 0.5847 [479, 313, 595, 1466] 2578s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.673 acc 0.6705 uar 0.5816 f1 0.5942 [489, 320, 597, 1447] 2836s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.658 acc 0.6740 uar 0.5860 f1 0.5982 [504, 325, 593, 1431] 3094s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6933 uar 0.6285 f1 0.6324
+majority baseline on this eval set: 0.4171 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f2_s3_train {"epoch": 11, "loss": 0.6575582389049469, "acc": 0.6740273396424816, "uar": 0.585985908493861, "macro_f1": 0.5982264502469307, "pred_dist": [504, 325, 593, 1431]}
+[2026-10-06 23:44:40 UTC] EXIT v6_C_f2_s3 0
+[2026-10-06 23:44:40 UTC] start v6_P_f2_s3
+engagenet K=4 train 5026 clips/61 subjects, eval 2853/30 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.141 acc 0.6193 uar 0.4939 f1 0.4981 [522, 200, 485, 1646] 258s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.886 acc 0.6604 uar 0.5460 f1 0.5526 [587, 163, 588, 1515] 515s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.833 acc 0.6628 uar 0.5511 f1 0.5595 [576, 180, 589, 1508] 773s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.801 acc 0.6653 uar 0.5573 f1 0.5677 [565, 203, 579, 1506] 1030s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.780 acc 0.6681 uar 0.5640 f1 0.5762 [552, 227, 565, 1509] 1287s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.751 acc 0.6698 uar 0.5688 f1 0.5817 [547, 239, 569, 1498] 1545s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.727 acc 0.6726 uar 0.5741 f1 0.5872 [554, 252, 554, 1493] 1802s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.706 acc 0.6751 uar 0.5778 f1 0.5911 [551, 263, 548, 1491] 2060s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.690 acc 0.6786 uar 0.5824 f1 0.5959 [553, 264, 553, 1483] 2319s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.672 acc 0.6831 uar 0.5898 f1 0.6035 [562, 268, 554, 1469] 2577s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.659 acc 0.6831 uar 0.5904 f1 0.6037 [565, 270, 564, 1454] 2836s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.643 acc 0.6870 uar 0.5965 f1 0.6098 [569, 275, 567, 1442] 3095s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.7014 uar 0.6352 f1 0.6411
+majority baseline on this eval set: 0.4171 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f2_s3_train {"epoch": 11, "loss": 0.6433917631389229, "acc": 0.6869961444093936, "uar": 0.5964852716237187, "macro_f1": 0.6097548354619926, "pred_dist": [569, 275, 567, 1442]}
+[2026-10-07 00:39:37 UTC] EXIT v6_P_f2_s3 0
+[2026-10-07 00:39:37 UTC] start v6_C_f2_s4
+engagenet K=4 train 5026 clips/61 subjects, eval 2853/30 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.167 acc 0.6046 uar 0.4629 f1 0.4383 [543, 0, 655, 1655] 259s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.927 acc 0.5166 uar 0.4434 f1 0.4013 [61, 726, 642, 1424] 515s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.878 acc 0.5230 uar 0.4482 f1 0.4120 [80, 692, 656, 1425] 772s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.826 acc 0.5405 uar 0.4617 f1 0.4382 [127, 637, 646, 1443] 1030s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.799 acc 0.5513 uar 0.4714 f1 0.4523 [149, 604, 640, 1460] 1410s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.776 acc 0.5734 uar 0.4897 f1 0.4818 [208, 536, 631, 1478] 1860s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.751 acc 0.5903 uar 0.5059 f1 0.5035 [250, 513, 611, 1479] 2313s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.724 acc 0.6018 uar 0.5165 f1 0.5178 [283, 490, 601, 1479] 2762s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.708 acc 0.6197 uar 0.5345 f1 0.5398 [330, 451, 597, 1475] 3217s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.683 acc 0.6330 uar 0.5471 f1 0.5552 [375, 421, 592, 1465] 3669s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.674 acc 0.6456 uar 0.5600 f1 0.5698 [410, 398, 591, 1454] 4124s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.667 acc 0.6537 uar 0.5673 f1 0.5777 [438, 378, 595, 1442] 4573s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.7003 uar 0.6303 f1 0.6363
+majority baseline on this eval set: 0.4171 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f2_s4_train {"epoch": 11, "loss": 0.6673201580715787, "acc": 0.6536978618997547, "uar": 0.567260827525278, "macro_f1": 0.5777416835506246, "pred_dist": [438, 378, 595, 1442]}
+[2026-10-07 02:00:54 UTC] EXIT v6_C_f2_s4 0
+[2026-10-07 02:00:54 UTC] start v6_P_f2_s4
+engagenet K=4 train 5026 clips/61 subjects, eval 2853/30 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.139 acc 0.6323 uar 0.4970 f1 0.4758 [639, 17, 624, 1573] 453s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.884 acc 0.5626 uar 0.4755 f1 0.4661 [187, 609, 558, 1499] 908s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.835 acc 0.5738 uar 0.4910 f1 0.4842 [219, 600, 551, 1483] 1356s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.807 acc 0.5857 uar 0.5014 f1 0.5007 [266, 552, 557, 1478] 1810s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.774 acc 0.6011 uar 0.5173 f1 0.5203 [308, 516, 551, 1478] 2260s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.758 acc 0.6204 uar 0.5344 f1 0.5421 [368, 454, 553, 1478] 2715s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.732 acc 0.6337 uar 0.5463 f1 0.5562 [409, 412, 561, 1471] 3164s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.706 acc 0.6428 uar 0.5544 f1 0.5652 [441, 394, 553, 1465] 3619s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.693 acc 0.6488 uar 0.5605 f1 0.5715 [456, 383, 560, 1454] 4071s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.666 acc 0.6590 uar 0.5713 f1 0.5826 [475, 372, 562, 1444] 4525s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.656 acc 0.6646 uar 0.5789 f1 0.5903 [489, 366, 566, 1432] 4984s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.651 acc 0.6702 uar 0.5857 f1 0.5971 [501, 362, 569, 1421] 5435s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.7035 uar 0.6367 f1 0.6435
+majority baseline on this eval set: 0.4171 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f2_s4_train {"epoch": 11, "loss": 0.6510952295391423, "acc": 0.6701717490361023, "uar": 0.5857188545995758, "macro_f1": 0.5970935345088378, "pred_dist": [501, 362, 569, 1421]}
+[2026-10-07 03:36:29 UTC] EXIT v6_P_f2_s4 0
+[2026-10-07 03:36:29 UTC] start v6_C_f2_s5
+engagenet K=4 train 5026 clips/61 subjects, eval 2853/30 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.165 acc 0.6060 uar 0.4574 f1 0.4311 [616, 0, 487, 1750] 452s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.942 acc 0.6162 uar 0.5078 f1 0.4899 [482, 36, 1025, 1310] 909s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.872 acc 0.6148 uar 0.5071 f1 0.5003 [440, 95, 952, 1366] 1358s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.823 acc 0.6172 uar 0.5146 f1 0.5178 [412, 169, 872, 1400] 1813s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.798 acc 0.6253 uar 0.5255 f1 0.5320 [427, 198, 818, 1410] 2263s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.775 acc 0.6323 uar 0.5363 f1 0.5459 [424, 220, 786, 1423] 2718s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.747 acc 0.6355 uar 0.5410 f1 0.5519 [428, 238, 763, 1424] 3169s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.721 acc 0.6393 uar 0.5472 f1 0.5589 [432, 256, 744, 1421] 3625s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.704 acc 0.6449 uar 0.5533 f1 0.5652 [440, 269, 720, 1424] 4076s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.686 acc 0.6495 uar 0.5586 f1 0.5702 [452, 284, 700, 1417] 4532s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.674 acc 0.6533 uar 0.5635 f1 0.5752 [464, 288, 693, 1408] 4982s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.664 acc 0.6590 uar 0.5709 f1 0.5830 [480, 288, 685, 1400] 5437s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.6873 uar 0.6167 f1 0.6237
+majority baseline on this eval set: 0.4171 (accuracy is only comparable within the same split)
+FT_DONE v6_C_f2_s5_train {"epoch": 11, "loss": 0.6638970889483288, "acc": 0.6589554854539081, "uar": 0.5708611851031049, "macro_f1": 0.5830465827707227, "pred_dist": [480, 288, 685, 1400]}
+[2026-10-07 05:12:06 UTC] EXIT v6_C_f2_s5 0
+[2026-10-07 05:12:06 UTC] start v6_P_f2_s5
+engagenet K=4 train 5026 clips/61 subjects, eval 2853/30 (cv fold 2)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+$HOME/miniconda3/lib/python3.13/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+loaded svfap: missing 4 ['fc_norm.weight', 'fc_norm.bias', 'head.weight', 'head.bias'] unexpected 2 ['norm.weight', 'norm.bias']
+lora modules 39 trainable 1058820
+ep 0 loss 1.138 acc 0.6292 uar 0.4878 f1 0.4674 [672, 28, 514, 1639] 456s
+ckpt saved epoch 0 peak_mem_gb 8.75
+ep 1 loss 0.885 acc 0.6519 uar 0.5299 f1 0.5353 [575, 113, 580, 1585] 905s
+ckpt saved epoch 1 peak_mem_gb 8.75
+ep 2 loss 0.830 acc 0.6555 uar 0.5371 f1 0.5451 [565, 141, 577, 1570] 1361s
+ckpt saved epoch 2 peak_mem_gb 8.75
+ep 3 loss 0.797 acc 0.6593 uar 0.5462 f1 0.5572 [549, 194, 540, 1570] 1810s
+ckpt saved epoch 3 peak_mem_gb 8.75
+ep 4 loss 0.778 acc 0.6642 uar 0.5555 f1 0.5687 [532, 226, 521, 1574] 2280s
+ckpt saved epoch 4 peak_mem_gb 8.75
+ep 5 loss 0.757 acc 0.6684 uar 0.5626 f1 0.5762 [531, 242, 519, 1561] 2723s
+ckpt saved epoch 5 peak_mem_gb 8.75
+ep 6 loss 0.733 acc 0.6712 uar 0.5691 f1 0.5833 [519, 267, 512, 1555] 3177s
+ckpt saved epoch 6 peak_mem_gb 8.75
+ep 7 loss 0.709 acc 0.6719 uar 0.5714 f1 0.5854 [516, 283, 508, 1546] 3629s
+ckpt saved epoch 7 peak_mem_gb 8.75
+ep 8 loss 0.690 acc 0.6751 uar 0.5777 f1 0.5916 [521, 295, 509, 1528] 4087s
+ckpt saved epoch 8 peak_mem_gb 8.75
+ep 9 loss 0.670 acc 0.6740 uar 0.5788 f1 0.5924 [521, 304, 515, 1513] 4538s
+ckpt saved epoch 9 peak_mem_gb 8.75
+ep 10 loss 0.654 acc 0.6772 uar 0.5836 f1 0.5969 [527, 308, 525, 1493] 4995s
+ckpt saved epoch 10 peak_mem_gb 8.75
+ep 11 loss 0.649 acc 0.6824 uar 0.5914 f1 0.6046 [533, 311, 537, 1472] 5447s
+ckpt saved epoch 11 peak_mem_gb 8.75
+final raw-weight (non-EMA) score: acc 0.7007 uar 0.6384 f1 0.6431
+majority baseline on this eval set: 0.4171 (accuracy is only comparable within the same split)
+FT_DONE v6_P_f2_s5_train {"epoch": 11, "loss": 0.6489762750211036, "acc": 0.6824395373291272, "uar": 0.5914267814062616, "macro_f1": 0.6045990752906177, "pred_dist": [533, 311, 537, 1472]}
+[2026-10-07 06:47:54 UTC] EXIT v6_P_f2_s5 0
+pretraining present: 3/3  runs present: {'C': '9/9', 'P': '9/9'}
+fold 0: P 0.6006 (range 0.0136)  C 0.5863 (range 0.0092)  diff +0.0143  beyond seed range: True  UAR diff +0.0185  same-seed diffs [0.0032, 0.0138, 0.0259]
+fold 1: P 0.5688 (range 0.0288)  C 0.5673 (range 0.0245)  diff +0.0015  beyond seed range: False  UAR diff +0.0030  same-seed diffs [-0.0092, 0.0048, 0.009]
+fold 2: P 0.6038 (range 0.0127)  C 0.5863 (range 0.0205)  diff +0.0175  beyond seed range: False  UAR diff +0.0165  same-seed diffs [0.0115, 0.0194, 0.0216]
+FAIL: mean macro-F1 P - C +0.0111 (needs >= +0.015), 1/3 folds positive and beyond the seed range (needs >= 2), mean UAR P - C +0.0127 (needs >= 0)
+wrote $HOME/engagenet_p2_crossdomain/results/GATE_V6.json
+[2026-10-07 06:47:56 UTC] === v6 phase done; @reboot entry removed

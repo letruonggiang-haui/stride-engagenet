@@ -1,4 +1,4 @@
-# Sparse temporal sampling for video engagement recognition
+# Clip-matched stride: temporal sampling of a self-supervised facial-video backbone for engagement recognition
 
 Code, pre-registration records and result files for the manuscript submitted to
 PeerJ Computer Science.
@@ -15,6 +15,28 @@ frames is reported unresolved.
     results/           result files behind every reported number, plus the gate records
     logs/              training logs, one per campaign
     preregistration/   the dated design records that fix every threshold before the run it governs
+
+## The four campaigns after the official scoring
+
+Four campaigns were pre-registered after the official splits had been scored and ran on the inner folds
+only: segment consensus against clip-matched stride, per-student calibration from labelled enrolment
+clips, continued self-supervised pretraining at the clip-matched-stride window, and a confirmation round
+of the last. Each has its dated record in `preregistration/` (MODEL_V3 to MODEL_V6, with two addenda),
+its gate script in `code/` (`gate_v3.py`, `kshot_v4.py`, `gate_v5.py`, `gate_v6.py`), its queue script
+(`run_v3.sh`, `run_v5.sh`, `run_v6.sh`), its result files in `results/` and its log in `logs/`. All four
+gates were missed and no official split was opened for any of them.
+
+`code/verify_v3_v6_numbers.py` regenerates, at the printed rounding, every value the manuscript reports
+from those campaigns and from the full count of clip lengths, and exits non-zero on any mismatch. Run on
+the deposited `results/`, it reports 80 values and no mismatch, and the three gate scripts reproduce
+`GATE_V3.json`, `GATE_V5.json` and `GATE_V6.json` exactly.
+
+The design records are byte-identical to the files whose sha256 the gate scripts carry. In the result
+files and logs the server's home directory is written `$HOME`; the gate scripts compare the last three
+components of a weights path, so the masking does not affect them. `code/ft_video.py` gained three options
+for these campaigns (`--segments`, `--resume`, `--init-ckpt`); without them it takes the same path as the
+version that produced the official runs, and a rerun of the official inner-fold configuration reproduced
+the earlier macro-F1 to every digit on five fold-and-seed pairs.
 
 ## What is here, and what is not
 

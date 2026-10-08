@@ -1,0 +1,78 @@
+{
+ "design": "MODEL_V5_DESIGN_2026-10-05, gate G-D",
+ "design_sha256": "c13e32416f4df296273040b4692d73d1f91695761bf3c942a2a804de90103994",
+ "threshold_mean_macro_f1": 0.015,
+ "min_folds_beyond_seed_range": 2,
+ "selection_metric": "macro_f1 primary, uar secondary; accuracy never used to select",
+ "per_fold": {
+  "0": {
+   "P_macro_f1_seeds": [
+    0.594780870491991,
+    0.6024662851029923,
+    0.5956285179301284
+   ],
+   "C_macro_f1_seeds": [
+    0.5961264488476374,
+    0.592096477487567,
+    0.580897776307274
+   ],
+   "P_mean": 0.5976252245083705,
+   "C_mean": 0.5897069008808261,
+   "P_seed_range": 0.007685414611001251,
+   "C_seed_range": 0.01522867254036342,
+   "diff_macro_f1": 0.00791832362754441,
+   "beyond_seed_range": false,
+   "diff_uar": 0.01809546698970932,
+   "diff_acc": -0.0025871459694990495
+  },
+  "1": {
+   "P_macro_f1_seeds": [
+    0.5834033775478953,
+    0.5841978133120538,
+    0.5963532877890242
+   ],
+   "C_macro_f1_seeds": [
+    0.5607144124306032,
+    0.5619517501451409,
+    0.5666052355158135
+   ],
+   "P_mean": 0.5879848262163244,
+   "C_mean": 0.5630904660305193,
+   "P_seed_range": 0.012949910241128904,
+   "C_seed_range": 0.005890823085210384,
+   "diff_macro_f1": 0.024894360185805153,
+   "beyond_seed_range": true,
+   "diff_uar": 0.02461286677700658,
+   "diff_acc": 0.02379105249547453
+  },
+  "2": {
+   "P_macro_f1_seeds": [
+    0.617274178023917,
+    0.5992151935079505,
+    0.6161342013230814
+   ],
+   "C_macro_f1_seeds": [
+    0.5835686968298797,
+    0.5955206178154069,
+    0.60475236499739
+   ],
+   "P_mean": 0.610874524284983,
+   "C_mean": 0.5946138932142255,
+   "P_seed_range": 0.018058984515966547,
+   "C_seed_range": 0.021183668167510383,
+   "diff_macro_f1": 0.01626063107075748,
+   "beyond_seed_range": false,
+   "diff_uar": 0.014245046891089408,
+   "diff_acc": 0.019277953031896167
+  }
+ },
+ "mean_diff_macro_f1": 0.016357771628035683,
+ "folds_beyond_seed_range": 1,
+ "mean_diff_uar": 0.018984460219268435,
+ "mean_diff_acc": 0.013493953185957216,
+ "condition_1": true,
+ "condition_2": false,
+ "condition_3": true,
+ "gate_pass": false,
+ "verdict": "FAIL: mean macro-F1 P - C +0.0164 (needs >= +0.015), 1/3 folds positive and beyond the seed range (needs >= 2), mean UAR P - C +0.0190 (needs >= 0)"
+}

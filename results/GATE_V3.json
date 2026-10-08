@@ -1,0 +1,102 @@
+{
+ "design": "MODEL_V3_DESIGN_2026-10-02, gate G-S",
+ "design_sha256": "6843bb9613b99ebb7310657e95cd46faf290c6ce69939241651aa12e2705ec70",
+ "threshold_mean_macro_f1": 0.015,
+ "min_folds_beyond_seed_range": 2,
+ "selection_metric": "macro_f1 primary, uar secondary; accuracy never used to select",
+ "per_fold": {
+  "0": {
+   "S_macro_f1_seeds": [
+    0.5707313927728629,
+    0.5557698194242154,
+    0.5690489241914756
+   ],
+   "C_macro_f1_seeds": [
+    0.5961264488476374,
+    0.592096477487567,
+    0.580897776307274
+   ],
+   "S_mean": 0.5651833787961846,
+   "C_mean": 0.5897069008808261,
+   "S_seed_range": 0.01496157334864745,
+   "C_seed_range": 0.01522867254036342,
+   "diff_macro_f1": -0.02452352208464148,
+   "beyond_seed_range": false,
+   "diff_uar": -0.020931011287606105,
+   "diff_acc": 0.0017701525054465428
+  },
+  "1": {
+   "S_macro_f1_seeds": [
+    0.4790663213841254,
+    0.47072351490153475,
+    0.4798291534633006
+   ],
+   "C_macro_f1_seeds": [
+    0.5607144124306032,
+    0.5619517501451409,
+    0.5666052355158135
+   ],
+   "S_mean": 0.4765396632496535,
+   "C_mean": 0.5630904660305193,
+   "S_seed_range": 0.009105638561765828,
+   "C_seed_range": 0.005890823085210384,
+   "diff_macro_f1": -0.08655080278086574,
+   "beyond_seed_range": false,
+   "diff_uar": -0.06473234526796451,
+   "diff_acc": -0.03491078355314203
+  },
+  "2": {
+   "S_macro_f1_seeds": [
+    0.5632842121720278,
+    0.5406740974777495,
+    0.5510689496815027
+   ],
+   "C_macro_f1_seeds": [
+    0.5835686968298797,
+    0.5955206178154069,
+    0.60475236499739
+   ],
+   "S_mean": 0.5516757531104267,
+   "C_mean": 0.5946138932142255,
+   "S_seed_range": 0.022610114694278316,
+   "C_seed_range": 0.021183668167510383,
+   "diff_macro_f1": -0.042938140103798816,
+   "beyond_seed_range": false,
+   "diff_uar": -0.045632552173352825,
+   "diff_acc": -0.029676364061222094
+  }
+ },
+ "mean_diff_macro_f1": -0.05133748832310201,
+ "folds_beyond_seed_range": 0,
+ "mean_diff_uar": -0.043765302909641146,
+ "mean_diff_acc": -0.020938998369639195,
+ "condition_1": false,
+ "condition_2": false,
+ "condition_3": false,
+ "gate_pass": false,
+ "verdict": "FAIL: mean macro-F1 S - C -0.0513 (needs >= +0.015), 0/3 folds positive and beyond the seed range (needs >= 2), mean UAR S - C -0.0438 (needs >= 0)",
+ "diagnostic_R": {
+  "S_minus_R_macro_f1_per_fold": [
+   0.029196104220306163,
+   0.051181596127587436,
+   0.02522118508727067
+  ],
+  "S_minus_R_macro_f1_mean": 0.03519962847838809,
+  "S_minus_R_uar_mean": 0.029319418587774388,
+  "C_minus_R_macro_f1_per_fold": [
+   0.05371962630494764,
+   0.13773239890845318,
+   0.06815932519106949
+  ],
+  "C_minus_R_macro_f1_mean": 0.08653711680149011,
+  "C_minus_R_uar_mean": 0.07308472149741553
+ },
+ "environment_check_C_new_minus_v1": {
+  "fold0_seed0": 0.0,
+  "fold0_seed1": 0.0,
+  "fold0_seed2": 0.0,
+  "fold1_seed0": 0.0,
+  "fold2_seed0": 0.0
+ },
+ "environment_check_max_abs": 0.0
+}
