@@ -1,4 +1,4 @@
-# Clip-matched stride: temporal sampling of a self-supervised facial-video backbone for engagement recognition
+# Clip-matched stride: temporal sampling of a self-supervised facial-video backbone for engagement recognition on EngageNet
 
 Code, pre-registration records and result files for the manuscript submitted to
 PeerJ Computer Science.
