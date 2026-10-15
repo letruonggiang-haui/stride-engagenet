@@ -109,6 +109,7 @@ rec = next((open(f, encoding="utf-8").read() for f in _recs if os.path.exists(f)
 m = re.search(r"\(0,(\d{4}) → 0,(\d{4}) → 0,(\d{4})\)", rec)
 checks.append(("w sweep around 0.5, from the record of 22 September", "0.6846 0.6993 0.6895",
                " ".join("0." + x for x in m.groups()) if m else "record not found beside results/"))
+# the record is in Vietnamese and uses a decimal comma: "khoảng 0,685" reads "about 0.685"
 checks.append(("forecasts re-anchored to", "0.685", "0.685" if "khoảng 0,685" in rec else "not found"))
 
 # ---------------------------------------------------------------- final audit, 8 October 2026 (stages 66 and 67)

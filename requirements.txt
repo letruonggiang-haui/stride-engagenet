@@ -1,0 +1,19 @@
+# Python packages for the code in code/, with the versions installed on the training server on 15 October 2026
+# (Ubuntu 25.10, Python 3.13.13). Only Python, PyTorch and CUDA were logged at run time (Python 3.13.13,
+# torch 2.6.0, CUDA 12.4); the other versions are what the environment holds today, not a record of the runs.
+# PyTorch and torchvision were installed as CUDA 12.4 builds (torch 2.6.0+cu124, torchvision 0.21.0+cu124).
+torch==2.6.0
+torchvision==0.21.0
+timm==1.0.27
+einops==0.8.2
+numpy==2.4.4
+pandas==3.0.3
+openpyxl==3.1.5
+scipy==1.18.0
+scikit-learn==1.9.0
+opencv-python-headless==5.0.0.93
+insightface==1.0.1
+onnxruntime==1.28.0
+# used by extract_feats.py only outside its face-detector loader, for the earlier classroom stage of the project
+ultralytics==8.4.131
+safetensors==0.8.0
