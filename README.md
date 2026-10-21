@@ -107,7 +107,7 @@ interval block of the same file is unaffected.
 
 The paths are those of the server the experiments ran on; `ROOT` is set in `code/p2x_lib.py`. All commands are run
 from the top folder of this file (the folder that holds `code/`). Steps 1 and 7 need no dataset: a reader can install
-the environment and check every printed number against the deposited result files without any video.
+the environment and run the two verification scripts against the deposited result files without any video.
 
 1. Create a Python 3.13 environment with a CUDA build of PyTorch and install the other packages:
 
