@@ -1,4 +1,9 @@
-# Clip-matched stride: temporal sampling of a self-supervised facial-video backbone for engagement recognition on EngageNet
+# README of Supplemental Code and Data S1
+
+## Title
+
+Clip-matched stride: temporal sampling of a self-supervised facial-video backbone for engagement recognition on
+EngageNet.
 
 Supplemental Code and Data S1 of the article of the same title, submitted to PeerJ Computer Science as an AI
 Application article by Truong Giang Le, Dang Hung Phan, Viet Tuyen Nguyen and Trung Viet Nguyen. Corresponding
@@ -100,12 +105,26 @@ interval block of the same file is unaffected.
 
 ## Usage Instructions
 
-The paths are those of the server the experiments ran on; `ROOT` is set in `code/p2x_lib.py`.
+The paths are those of the server the experiments ran on; `ROOT` is set in `code/p2x_lib.py`. All commands are run
+from the top folder of this file (the folder that holds `code/`). Steps 1 and 7 need no dataset: a reader can install
+the environment and check every printed number against the deposited result files without any video.
 
-1. Create a Python 3.13 environment with a CUDA build of PyTorch and install `requirements.txt`.
+1. Create a Python 3.13 environment with a CUDA build of PyTorch and install the other packages:
+
+       python3.13 -m venv ~/venvs/engagenet
+       source ~/venvs/engagenet/bin/activate
+       pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
+       pip install -r requirements.txt
+
 2. Place the data. EngageNet labels in `~/engagenet/data/EmotiW_2023_EngageNet/`, EngageNet videos in
    `~/engagenet/videos/` (test videos may sit in `ROOT/data/engagenet_test_videos/`), DAiSEE under
-   `~/daisee/DAiSEE/` with its `DataSet/` and `Labels/` folders.
+   `~/daisee/DAiSEE/` with its `DataSet/` and `Labels/` folders. To check that the EngageNet labels load, run
+
+       PYTHONPATH=code python -c "import p2x_lib; df = p2x_lib.engagenet_labels(); print(df.groupby(['split', 'label']).size())"
+
+   `engagenet_labels()` reads the three label files, drops the SNP clips and returns one row per clip with the
+   columns `chunk`, `label`, `split`, `y4` (level 0 to 3), `y3`, `subject`, `session`, `video`, `idx`, `recording`
+   and `key`.
 3. Place the third-party code and weights, which are not redistributed: the SVFAP repository
    (https://github.com/sunlicai/SVFAP) in `ROOT/repos/SVFAP` and its VoxCeleb2 checkpoint as
    `ROOT/weights/svfap/svfap_base_voxceleb2_checkpoint-99.pth`; the MAE-DFER repository
@@ -180,5 +199,9 @@ submitted) and the works it builds on:
 ## License & Contribution Guidelines
 
 The code is released under version 3 of the GNU General Public License (`LICENSE`). `NOTICE.md` lists what the
-licence does not cover: pretrained backbone weights, the InsightFace models and all dataset content. Questions,
-corrections and reports of errors are welcome by e-mail to the corresponding authors.
+licence does not cover: pretrained backbone weights, the InsightFace models and all dataset content.
+
+Questions, reports of errors and proposed changes are welcome by e-mail to the corresponding authors. A report should
+name the file, the command that was run and the output. A proposed change to code that produces a reported number
+should come with the output of the two verification scripts of Usage Instructions step 7. The dated records in
+`preregistration/` are not edited: they are kept byte for byte because the gate scripts carry their SHA-256 digests.
